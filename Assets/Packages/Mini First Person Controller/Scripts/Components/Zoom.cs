@@ -27,5 +27,10 @@ public class Zoom : MonoBehaviour
         currentZoom += Input.mouseScrollDelta.y * sensitivity * .05f;
         currentZoom = Mathf.Clamp01(currentZoom);
         camera.fieldOfView = Mathf.Lerp(defaultFOV, maxZoomFOV, currentZoom);
+
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+
+        }
     }
 }

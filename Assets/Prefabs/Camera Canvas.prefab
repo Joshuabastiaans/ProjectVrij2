@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 4409670688863950918}
   - component: {fileID: 3244834773661875973}
   m_Layer: 5
-  m_Name: Trip Canvas
+  m_Name: Camera Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

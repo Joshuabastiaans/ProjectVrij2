@@ -42,9 +42,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Amplitude: 0.01
-    - _Edge_Blend: 0.792
-    - _Effect_Radius: 3.36
+    - _Amplitude: 0.03
+    - _Edge_Blend: 0.9
+    - _Effect_Radius: 19.3
     - _Frequency: 2.16
     - _Gradient_Edge: 1
     - _QueueControl: 0

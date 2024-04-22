@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerLook : MonoBehaviour
 {
@@ -13,6 +12,8 @@ public class PlayerLook : MonoBehaviour
     public float mouseX;
     public float mouseY;
     public float zRotation;
+
+    [SerializeField] bool alwaysRotating;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +31,7 @@ public class PlayerLook : MonoBehaviour
         {
             zRotation = 1 * spinSpeed * Time.deltaTime;
         }
-        else if (Input.GetKey(KeyCode.E))
+        else if (Input.GetKey(KeyCode.E) || alwaysRotating)
         {
             zRotation = -1 * spinSpeed * Time.deltaTime;
         }
