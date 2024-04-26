@@ -5,7 +5,7 @@ using UnityEngine;
 public class DistanceResize : MonoBehaviour
 {
     [SerializeField] Transform player;
-    [SerializeField] float strength = 1;
+    [SerializeField] float strength = 0.54f;
     public float distance;
 
     // Start is called before the first frame update
