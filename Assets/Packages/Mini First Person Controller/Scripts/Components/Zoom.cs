@@ -9,6 +9,7 @@ public class Zoom : MonoBehaviour
     [Range(0, 1)]
     public float currentZoom;
     public float sensitivity = 1;
+    [SerializeField] float zoomSpeed = 1;
 
 
     void Awake()
@@ -24,13 +25,17 @@ public class Zoom : MonoBehaviour
     void Update()
     {
         // Update the currentZoom and the camera's fieldOfView.
-        currentZoom += Input.mouseScrollDelta.y * sensitivity * .05f;
+        //currentZoom += Input.mouseScrollDelta.y * sensitivity * .05f;
         currentZoom = Mathf.Clamp01(currentZoom);
         camera.fieldOfView = Mathf.Lerp(defaultFOV, maxZoomFOV, currentZoom);
 
         if (Input.GetKey(KeyCode.Mouse1))
         {
-
+            currentZoom += Time.deltaTime * zoomSpeed;
+        }
+        else
+        {
+            currentZoom -= Time.deltaTime * zoomSpeed;
         }
     }
 }

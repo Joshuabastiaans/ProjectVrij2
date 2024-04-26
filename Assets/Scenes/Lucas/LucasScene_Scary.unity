@@ -2349,7 +2349,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.85066056, g: 1, b: 0.8443396, a: 1}
+  m_Color: {r: 1, g: 0.09803922, b: 0, a: 1}
   m_Intensity: 5.69
   m_Range: 110.57
   m_SpotAngle: 30
@@ -10050,7 +10050,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.85066056, g: 1, b: 0.8443396, a: 1}
+  m_Color: {r: 1, g: 0.09661573, b: 0, a: 1}
   m_Intensity: 5.69
   m_Range: 110.57
   m_SpotAngle: 30
@@ -10460,7 +10460,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 073f437fb2e790f4293a0a83628addd5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.37
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -11300,6 +11300,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 803944454}
+  - {fileID: 2142959476}
   - {fileID: 216139399}
   - {fileID: 924774727415418615}
   - {fileID: 670849045}
@@ -11327,7 +11328,6 @@ SceneRoots:
   - {fileID: 1584045610}
   - {fileID: 1222323930}
   - {fileID: 21640146}
-  - {fileID: 2142959476}
   - {fileID: 4018430584811667588}
   - {fileID: 761448373}
   - {fileID: 1769173034}
