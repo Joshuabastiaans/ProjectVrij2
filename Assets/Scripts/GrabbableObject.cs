@@ -18,8 +18,6 @@ public class GrabbableObject : MonoBehaviour
     public void Grab(Transform objectGrabPointTransform)
     {
         this.objectGrabPointTransform = objectGrabPointTransform;
-        GetComponent<Rigidbody>().velocity = Vector3.zero;
-        GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
     }
 
     public void Drop()
@@ -34,6 +32,9 @@ public class GrabbableObject : MonoBehaviour
             Vector3 newPosition = Vector3.Lerp(transform.position, objectGrabPointTransform.position, Time.deltaTime * lerpSpeed);
             rb.MovePosition(newPosition);
             rb.MoveRotation(objectGrabPointTransform.rotation);
+
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         }
     }
 }
