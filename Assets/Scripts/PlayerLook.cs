@@ -40,6 +40,11 @@ public class PlayerLook : MonoBehaviour
             zRotation = 0;
         }
 
+        
+    }
+
+    void LateUpdate()
+    {
         transform.Rotate(-mouseY, mouseX, zRotation);
     }
 }
