@@ -20,7 +20,7 @@ public class PlayerGroundMovement : MonoBehaviour
     [SerializeField] float jumpForce;
     [SerializeField] float gravityForce = -10;
     [SerializeField] Transform groundCheck;
-    [SerializeField] LayerMask groundLayer;
+    [SerializeField] LayerMask playerLayer;
 
     [SerializeField] KeyCode runInput = KeyCode.LeftShift;
 
@@ -132,6 +132,6 @@ public class PlayerGroundMovement : MonoBehaviour
 
     bool IsGrounded()
     {
-        return Physics.CheckSphere(groundCheck.position, 0.2f, groundLayer);
+        return Physics.CheckSphere(groundCheck.position, 0.2f, ~playerLayer);
     }
 }

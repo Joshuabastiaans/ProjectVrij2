@@ -3,8 +3,9 @@ using UnityEngine;
 
 public class FirstPersonAudio : MonoBehaviour
 {
-    public FirstPersonMovement character;
-    public GroundCheck groundCheck;
+    public PlayerGroundMovement character;
+    public Transform groundCheck;
+    public LayerMask playerLayer;
 
     [Header("Step")]
     public AudioSource stepAudio;
@@ -35,8 +36,7 @@ public class FirstPersonAudio : MonoBehaviour
     void Reset()
     {
         // Setup stuff.
-        character = GetComponentInParent<FirstPersonMovement>();
-        groundCheck = (transform.parent ?? transform).GetComponentInChildren<GroundCheck>();
+        character = GetComponentInParent<PlayerGroundMovement>();
         stepAudio = GetOrCreateAudioSource("Step Audio");
         runningAudio = GetOrCreateAudioSource("Running Audio");
         landingAudio = GetOrCreateAudioSource("Landing Audio");
@@ -66,16 +66,16 @@ public class FirstPersonAudio : MonoBehaviour
     {
         // Play moving audio if the character is moving and on the ground.
         float velocity = Vector3.Distance(CurrentCharacterPosition, lastCharacterPosition);
-        if (velocity >= velocityThreshold && groundCheck && groundCheck.isGrounded)
+        if (velocity >= velocityThreshold && IsGrounded())
         {
             if (crouch && crouch.IsCrouched)
             {
                 SetPlayingMovingAudio(crouchedAudio);
             }
-            else if (character.IsRunning)
-            {
-                SetPlayingMovingAudio(runningAudio);
-            }
+            //else if (character.IsRunning)
+            //{
+            //    SetPlayingMovingAudio(runningAudio);
+            //}
             else
             {
                 SetPlayingMovingAudio(stepAudio);
@@ -110,6 +110,11 @@ public class FirstPersonAudio : MonoBehaviour
         }
     }
 
+    bool IsGrounded()
+    {
+        return Physics.CheckSphere(groundCheck.position, 0.3f, ~playerLayer);
+    }
+
     #region Play instant-related audios.
     void PlayLandingAudio() => PlayRandomClip(landingAudio, landingSFX);
     void PlayJumpAudio() => PlayRandomClip(jumpAudio, jumpSFX);
@@ -121,7 +126,7 @@ public class FirstPersonAudio : MonoBehaviour
     void SubscribeToEvents()
     {
         // PlayLandingAudio when Grounded.
-        groundCheck.Grounded += PlayLandingAudio;
+        //groundCheck.Grounded += PlayLandingAudio;
 
         // PlayJumpAudio when Jumped.
         if (jump)
@@ -140,7 +145,7 @@ public class FirstPersonAudio : MonoBehaviour
     void UnsubscribeToEvents()
     {
         // Undo PlayLandingAudio when Grounded.
-        groundCheck.Grounded -= PlayLandingAudio;
+        //groundCheck.Grounded -= PlayLandingAudio;
 
         // Undo PlayJumpAudio when Jumped.
         if (jump)

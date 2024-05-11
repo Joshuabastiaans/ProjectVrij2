@@ -13,6 +13,8 @@ public class PlayerPickup : MonoBehaviour
     [SerializeField] GameObject reticle;
 
     GrabbableObject grabbableObject;
+    Drug drug;
+
     void Update()
     {
         if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit hit, pickupDistance, groundLayer))
@@ -30,6 +32,10 @@ public class PlayerPickup : MonoBehaviour
                     {
                         Debug.Log(grabbableObject);
                         grabbableObject.Grab(objectGrabPointTransform);
+                    }
+                    else if (raycastHit.transform.TryGetComponent(out drug))
+                    {
+                        drug.TakeDrug();
                     }
                 }
             }
