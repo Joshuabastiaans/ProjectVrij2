@@ -154,7 +154,7 @@ PrefabInstance:
     - target: {fileID: 1741616926766647049, guid: d4dddf18c1b545f4c84dc197fdfa3346,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.715
+      value: -0.169
       objectReference: {fileID: 0}
     - target: {fileID: 2633791999063997189, guid: d4dddf18c1b545f4c84dc197fdfa3346,
         type: 3}
@@ -349,15 +349,15 @@ MonoBehaviour:
   currentSpeed: 0
   IsRunning: 0
   moveSpeed: 6
-  maxRunSpeed: 12
+  maxRunSpeed: 6
   runAcceleration: 100
   doubleTapTime: 0.3
-  jumpForce: 6
+  jumpForce: 3
   gravityForce: -30
   groundCheck: {fileID: 8289533438283034242}
-  groundLayer:
+  playerLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 512
   runInput: 304
   InLight: 0
 --- !u!4 &7639536588112871855 stripped

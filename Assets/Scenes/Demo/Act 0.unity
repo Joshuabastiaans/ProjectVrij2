@@ -10428,36 +10428,6 @@ PrefabInstance:
       propertyPath: reticle
       value: 
       objectReference: {fileID: 4231908}
-    - target: {fileID: 2033302813426640542, guid: c7c81c4549fadcf48816c4db98473f07,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4500566549281550335, guid: c7c81c4549fadcf48816c4db98473f07,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4500566549281550335, guid: c7c81c4549fadcf48816c4db98473f07,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.169
-      objectReference: {fileID: 0}
-    - target: {fileID: 6150087983989399050, guid: c7c81c4549fadcf48816c4db98473f07,
-        type: 3}
-      propertyPath: jumpForce
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6150087983989399050, guid: c7c81c4549fadcf48816c4db98473f07,
-        type: 3}
-      propertyPath: maxRunSpeed
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6150087983989399050, guid: c7c81c4549fadcf48816c4db98473f07,
-        type: 3}
-      propertyPath: playerLayer.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
     - target: {fileID: 7639536588112871855, guid: c7c81c4549fadcf48816c4db98473f07,
         type: 3}
       propertyPath: m_LocalPosition.x
