@@ -1,36 +1,68 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerGroundLook : MonoBehaviour
 {
-    static float sensitivity = 300;
-    Transform player;
-    float xRotation;
-    float xMouse;
-    float yMouse;
+    public PlayerControls controls;
+    private Transform playerBody;
+    public float mouseSensitivity = 100f;
+    public float gamepadSensitivity = 100f;
+    private Vector2 lookInput;
+    private float xRotation = 0f;
+    private Transform camTransform;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        controls = new PlayerControls();
+        controls.Player.Look.performed += ctx => Look(ctx.ReadValue<Vector2>());
+        controls.Player.Look.canceled += ctx => Look(Vector2.zero);
+        playerBody = GameObject.FindGameObjectWithTag("Player").transform;
+        camTransform = transform.parent;
         Cursor.lockState = CursorLockMode.Locked;
-        player = GetComponentInParent<PlayerGroundMovement>().transform;
+    }
+
+    void OnEnable()
+    {
+        controls.Player.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Player.Disable();
     }
 
     void Update()
     {
-        
+        ApplyLook();
     }
 
-    // Update is called once per frame
-    void LateUpdate()
+    void Look(Vector2 input)
     {
-        xMouse = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
-        yMouse = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
-        xRotation -= yMouse;
-        xRotation = Mathf.Clamp(xRotation, -90, 90);
+        lookInput = input;
+    }
 
-        transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
-        player.Rotate(Vector3.up * xMouse);
+    void ApplyLook()
+    {
+        if (lookInput == Vector2.zero) return;
+
+        float sensitivity = GetCurrentSensitivity();
+
+        float mouseX = lookInput.x * sensitivity * Time.deltaTime;
+        float mouseY = lookInput.y * sensitivity * Time.deltaTime;
+
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+        camTransform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        playerBody.Rotate(Vector3.up * mouseX);
+    }
+
+    float GetCurrentSensitivity()
+    {
+        if (Gamepad.current != null && Gamepad.current.enabled)
+        {
+            return gamepadSensitivity;
+        }
+        return mouseSensitivity;
     }
 }
