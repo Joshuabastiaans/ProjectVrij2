@@ -1360,7 +1360,7 @@ GameObject:
   - component: {fileID: 2563639252382278721}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1483,9 +1483,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsLocked: 0
   canInteract: 0
+  isOpen: 0
   isLeftDoor: 1
   isRightDoor: 0
   createRoom: 1
+  createExit: 0
 --- !u!1 &7705223458896394930
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,7 +1550,7 @@ GameObject:
   - component: {fileID: 6919524566786682667}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1671,9 +1673,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsLocked: 0
   canInteract: 0
+  isOpen: 0
   isLeftDoor: 0
   isRightDoor: 1
   createRoom: 1
+  createExit: 0
 --- !u!1 &8283865978812308020
 GameObject:
   m_ObjectHideFlags: 0
