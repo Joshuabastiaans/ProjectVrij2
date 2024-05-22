@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Callbacks;
 using UnityEngine;
 
 
@@ -38,7 +37,6 @@ public class PlayerGroundMovement : MonoBehaviour
         controls.Player.Move.canceled += ctx => movement = Vector2.zero;
         controls.Player.Run.performed += ctx => IsRunning = true;
         controls.Player.Run.canceled += ctx => IsRunning = false;
-        // controls.Player.Look.performed += ctx => Look(ctx.ReadValue<Vector2>());
     }
 
     void OnEnable()
@@ -87,20 +85,11 @@ public class PlayerGroundMovement : MonoBehaviour
     {
         if (IsRunning)
         {
-            currentSpeed += runAcceleration * Time.deltaTime;
+            currentSpeed = Mathf.MoveTowards(currentSpeed, maxRunSpeed, runAcceleration * Time.deltaTime);
         }
         else
         {
-            currentSpeed = moveSpeed;
-        }
-
-        if (currentSpeed >= maxRunSpeed)
-        {
-            currentSpeed = maxRunSpeed;
-        }
-        if (currentSpeed <= moveSpeed)
-        {
-            currentSpeed = moveSpeed;
+            currentSpeed = Mathf.MoveTowards(currentSpeed, moveSpeed, runAcceleration * Time.deltaTime);
         }
     }
 

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Labirinth.unity
+    guid: de752710187c04248a44bc58f953cdf7
+  - enabled: 1
     path: Assets/Scenes/Lucas/LucasScene 1.unity
     guid: ae18d6c4ea7e03f4aad2983cacf17ff8
   - enabled: 1

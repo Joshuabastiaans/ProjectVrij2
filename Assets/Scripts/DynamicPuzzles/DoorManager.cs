@@ -1,44 +1,39 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DoorManager : MonoBehaviour
 {
-    public bool IsLocked = false;
-    private Animation doorAnimation;
 
-    PlayerControls controls;
+    bool createdRoom = false;
+    RoomManager roomManager;
+    GameObject m_lastDoorOpened;
 
     void Awake()
     {
-        controls = new PlayerControls();
-        controls.Player.Interact.performed += ctx => OpenDoor();
+        roomManager = GameObject.Find("RoomManager").GetComponent<RoomManager>();
     }
-
-    // Start is called before the first frame update
-    void Start()
+    public void CreateRoom(Vector3 doorPosition, GameObject lastDoorOpened)
     {
-        doorAnimation = GetComponent<Animation>();
-    }
-
-    void OpenDoor()
-    {
-        doorAnimation.Play("DoorOpen");
-    }
-
-    void CloseDoor()
-    {
-        doorAnimation.Play("DoorClose");
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
+        if (m_lastDoorOpened != null && m_lastDoorOpened != lastDoorOpened)
         {
-            if (!IsLocked)
-            {
-                OpenDoor();
-            }
+            m_lastDoorOpened.GetComponent<DoorController>().CloseDoor();
+            roomManager.DestroyLastRoom();
         }
+
+        m_lastDoorOpened = lastDoorOpened;
+        roomManager.GenerateRoom(doorPosition);
+
+        createdRoom = true;
+    }
+
+    public void CreateExit(Vector3 doorPosition)
+    {
+        roomManager.GenerateExit(doorPosition);
+
+        return;
+    }
+
+    public void SetExit()
+    {
+        roomManager.createExit = true;
     }
 }
