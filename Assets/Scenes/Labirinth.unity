@@ -306,12 +306,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7c81c4549fadcf48816c4db98473f07, type: 3}
---- !u!1 &203017791 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8283865978812308020, guid: 8c1824f8afe8d2547b9c456f8a30a567,
-    type: 3}
-  m_PrefabInstance: {fileID: 9007012972846471053}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &209538728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1009,7 +1003,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b129af0947467419651f1e58249f30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomPrefab: {fileID: 203017791}
+  roomPrefab: {fileID: 8283865978812308020, guid: 8c1824f8afe8d2547b9c456f8a30a567,
+    type: 3}
   exitPrefab: {fileID: 335734618344999364, guid: 82c0b7bff84336644b85c03dceb18b27,
     type: 3}
   createExit: 0
@@ -1416,6 +1411,11 @@ PrefabInstance:
     - target: {fileID: 1288571541412618379, guid: 78132295db2e187499fb063ec26cdd31,
         type: 3}
       propertyPath: m_Name
+      value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009609303897529191, guid: 78132295db2e187499fb063ec26cdd31,
+        type: 3}
+      propertyPath: m_TagString
       value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 3778160790122433303, guid: 78132295db2e187499fb063ec26cdd31,

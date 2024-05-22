@@ -78,7 +78,12 @@ public class DoorController : MonoBehaviour
             doorManager.SetExit();
             doorManager.CreateExit(new Vector3(0f, 0f, -12.6f));
             createdExitRoom = true;
-            print("Exit Created");
+            // Lock all doors
+            GameObject[] doors = GameObject.FindGameObjectsWithTag("Door");
+            foreach (GameObject door in doors)
+            {
+                door.GetComponent<DoorController>().IsLocked = true;
+            }
             return;
         }
 
