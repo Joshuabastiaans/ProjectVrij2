@@ -83,7 +83,7 @@ public class PlayerGroundMovement : MonoBehaviour
 
     void Running()
     {
-        if (IsRunning)
+        if (IsRunning && IsGrounded())
         {
             currentSpeed = Mathf.MoveTowards(currentSpeed, maxRunSpeed, runAcceleration * Time.deltaTime);
         }
