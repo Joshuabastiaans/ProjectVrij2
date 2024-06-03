@@ -24,7 +24,7 @@ public class PlayerGroundMovement : MonoBehaviour
     [SerializeField] KeyCode runInput = KeyCode.LeftShift;
 
     CharacterController controller;
-    [SerializeField] GameObject canvas;
+    //[SerializeField] GameObject canvas;
     public bool InLight;
     PlayerControls controls;
     Vector2 movement;
@@ -54,7 +54,7 @@ public class PlayerGroundMovement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        canvas.gameObject.SetActive(true);
+        //canvas.gameObject.SetActive(true);
         currentSpeed = moveSpeed;
     }
 
