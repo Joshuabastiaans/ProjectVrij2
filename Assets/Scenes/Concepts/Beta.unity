@@ -2477,6 +2477,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5300592414060691432, guid: 4f023240892c34e4ca7e4ec4569b5502,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
