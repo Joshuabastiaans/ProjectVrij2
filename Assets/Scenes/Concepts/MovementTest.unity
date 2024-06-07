@@ -409,6 +409,11 @@ PrefabInstance:
       propertyPath: reticle
       value: 
       objectReference: {fileID: 594900665}
+    - target: {fileID: 1879749852689650458, guid: c7c81c4549fadcf48816c4db98473f07,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3945658888492794353, guid: c7c81c4549fadcf48816c4db98473f07,
         type: 3}
       propertyPath: field of view
@@ -2059,7 +2064,7 @@ PrefabInstance:
     - target: {fileID: 1184072013899096370, guid: 4f023240892c34e4ca7e4ec4569b5502,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2678016998427361536, guid: 4f023240892c34e4ca7e4ec4569b5502,
         type: 3}
@@ -2069,12 +2074,12 @@ PrefabInstance:
     - target: {fileID: 4185483981580561740, guid: 4f023240892c34e4ca7e4ec4569b5502,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6694634543888447390, guid: 4f023240892c34e4ca7e4ec4569b5502,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
