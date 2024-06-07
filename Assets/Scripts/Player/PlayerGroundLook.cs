@@ -33,7 +33,7 @@ public class PlayerGroundLook : MonoBehaviour
 
     void Update()
     {
-        ApplyLook();
+        LookInput();
     }
 
     void Look(Vector2 input)
@@ -41,7 +41,7 @@ public class PlayerGroundLook : MonoBehaviour
         lookInput = input;
     }
 
-    void ApplyLook()
+    void LookInput()
     {
         if (lookInput == Vector2.zero) return;
 
