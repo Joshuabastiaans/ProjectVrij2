@@ -48,7 +48,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4417589697568889024
 Transform:
   m_ObjectHideFlags: 0
@@ -329,6 +329,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4343854574071561196, guid: d4dddf18c1b545f4c84dc197fdfa3346,
+        type: 3}
+      propertyPath: pickupDistance
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4549627840769184251, guid: d4dddf18c1b545f4c84dc197fdfa3346,
         type: 3}
       propertyPath: defaultFOV
@@ -354,6 +359,11 @@ PrefabInstance:
       propertyPath: m_Height
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5448119271858888113, guid: d4dddf18c1b545f4c84dc197fdfa3346,
+        type: 3}
+      propertyPath: m_SlopeLimit
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 5502088390662957401, guid: d4dddf18c1b545f4c84dc197fdfa3346,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -362,12 +372,12 @@ PrefabInstance:
     - target: {fileID: 5502088390662957401, guid: d4dddf18c1b545f4c84dc197fdfa3346,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9
+      value: 0.74
       objectReference: {fileID: 0}
     - target: {fileID: 5502088390662957401, guid: d4dddf18c1b545f4c84dc197fdfa3346,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3.43
       objectReference: {fileID: 0}
     - target: {fileID: 5502088390662957401, guid: d4dddf18c1b545f4c84dc197fdfa3346,
         type: 3}
@@ -529,8 +539,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSpeed: 0
   IsRunning: 0
-  moveSpeed: 4
-  maxRunSpeed: 7
+  moveSpeed: 5
+  maxRunSpeed: 8
   runAcceleration: 100
   doubleTapTime: 0.3
   jumpForce: 2

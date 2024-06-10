@@ -8,10 +8,15 @@ public class Drug : MonoBehaviour
     [SerializeField] string sceneName;
     bool taken;
 
+    [SerializeField] Animator drugTransition;
+    [SerializeField] Animator tripCam;
+
+    Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,11 +28,12 @@ public class Drug : MonoBehaviour
     public void TakeDrug()
     {
         taken = true;
-        FindObjectOfType<HUDCanvas>().PlayDrugTransition();
-        Invoke("LoadScene", 8);
+        animator.SetTrigger("dissapear");
+        drugTransition.SetTrigger("stay");
+        tripCam.SetTrigger("trip");
     }
 
-    void LoadScene()
+    void StartTripping()
     {
         SceneManager.LoadScene(sceneName);
     }
