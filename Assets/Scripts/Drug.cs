@@ -27,6 +27,7 @@ public class Drug : MonoBehaviour
 
     public void TakeDrug()
     {
+        if (taken) return;
         taken = true;
         if (loadNextScene)
         {

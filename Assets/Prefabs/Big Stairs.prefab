@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 53d1f7b96f0dcec40ace9f3f8c4f2d8f, type: 2}
+  - {fileID: 2100000, guid: 0ae64a62182deee4085d7b839f843589, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -134,7 +134,7 @@ Transform:
   m_GameObject: {fileID: 6791744301609170456}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00016262094, y: 0.9589362, z: -0.28362176, w: 0.00019040529}
-  m_LocalPosition: {x: -0.07222748, y: 7.16, z: 11.13}
+  m_LocalPosition: {x: -0.07222748, y: 7.106, z: 11.13}
   m_LocalScale: {x: 0.70076984, y: 1, z: 2.6464798}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -168,7 +168,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -274,7 +274,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 53d1f7b96f0dcec40ace9f3f8c4f2d8f, type: 2}
+  - {fileID: 2100000, guid: 0ae64a62182deee4085d7b839f843589, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -377,11 +377,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -451,11 +466,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -525,11 +555,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -599,11 +644,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -673,11 +733,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -747,11 +822,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -821,11 +911,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -895,11 +1000,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -969,11 +1089,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1043,11 +1178,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1117,11 +1267,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1191,11 +1356,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1265,11 +1445,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1339,11 +1534,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1413,11 +1623,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1487,11 +1712,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1561,11 +1801,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5934105019872582392}
     m_Modifications:
+    - target: {fileID: 3157942550361908845, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_Name
       value: Castle Stairs_sdEvm (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5365253353664288156, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
+    - target: {fileID: 6704426749924664131, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eafb87efa6e554eba46aac3ad36b7c, type: 2}
     - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
         type: 3}
       propertyPath: m_LocalPosition.x
