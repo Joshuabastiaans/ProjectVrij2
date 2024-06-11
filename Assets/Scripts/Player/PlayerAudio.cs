@@ -1,61 +1,89 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using FMOD.Studio;
 
 public class PlayerAudio : MonoBehaviour
 {
-    [SerializeField] AudioClip[] walkingSounds;
-    [SerializeField] AudioSource walkingSoundsSource;
-    [SerializeField] float walkingSoundIntervalTime = 0.5f;
-    [Space]
-    [SerializeField] AudioClip landingSound;
-    public bool IsWalking;
+    public bool isGrounded;
 
-    int stepCount = 0;
-    bool isPlayingSteps = false;
+    // sound related variables
+    private Vector3 previousPosition;
+    private float velocity;
+    [SerializeField] private float velocitySoundThreshold = 0.2f;
+    private EventInstance playerFootsteps;
+    private EventInstance caveAmbience;
+    private FMOD.ATTRIBUTES_3D attributes;
+    private Transform footstepsReferenceLocation;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        InitializeAudio();
+
+    }
+
+    void InitializeAudio()
+    {
+        // initialize footsteps
+        footstepsReferenceLocation = transform.Find("GroundCheck");
+        playerFootsteps = AudioManager.instance.CreateEventInstance(FMODEvents.instance.playerFootsteps);
+        attributes = FMODUnity.RuntimeUtils.To3DAttributes(footstepsReferenceLocation);
+        playerFootsteps.set3DAttributes(attributes);
+
+        // initialize cave ambience
+        caveAmbience = AudioManager.instance.CreateEventInstance(FMODEvents.instance.caveAmbience);
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        WalkingSounds();
+        UpdateSound();
     }
 
-    void WalkingSounds()
+    public void UpdateSound()
     {
-        if (IsWalking)
+        if (isGrounded)
         {
-            if (!isPlayingSteps)
+            // if moving play footsteps
+            Vector3 currentPosition = transform.position;
+            if (previousPosition != null)
             {
-                isPlayingSteps = true;
-                StartCoroutine(PlaySteps());
+                float distanceTravelled = Vector3.Distance(previousPosition, currentPosition);
+                float timeTaken = Time.deltaTime;
+                velocity = distanceTravelled / timeTaken;
+            }
+            previousPosition = currentPosition;
+
+
+            attributes = FMODUnity.RuntimeUtils.To3DAttributes(footstepsReferenceLocation);
+            playerFootsteps.set3DAttributes(attributes);
+
+            if (velocity > velocitySoundThreshold)
+            {
+                PLAYBACK_STATE playbackState;
+                playerFootsteps.getPlaybackState(out playbackState);
+
+                if (playbackState != PLAYBACK_STATE.PLAYING)
+                {
+                    playerFootsteps.start();
+                }
+            }
+            else
+            {
+                playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
             }
         }
-        else
-        {
-            StopAllCoroutines();
-            isPlayingSteps = false;
-        }
-    }
-    IEnumerator PlaySteps()
-    {
-        walkingSoundsSource.PlayOneShot(walkingSounds[stepCount]);
-        yield return new WaitForSeconds(walkingSoundIntervalTime);
-        stepCount++;
-        if (stepCount >= walkingSounds.Length)
-        {
-            stepCount = 0;
-        }
-        StartCoroutine(PlaySteps());
     }
 
     public void LandingSound()
     {
 
+    }
+
+    private void OnDestroy()
+    {
+        playerFootsteps.release();
     }
 }
