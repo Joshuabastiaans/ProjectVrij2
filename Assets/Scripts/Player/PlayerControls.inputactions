@@ -285,6 +285,17 @@
                 },
                 {
                     "name": "",
+                    "id": "c4482aae-a1e3-4ac9-93c3-3fa3bd534475",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "3bef1087-7e0f-499d-8ce8-27879971136e",
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",

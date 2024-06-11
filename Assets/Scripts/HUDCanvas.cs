@@ -9,7 +9,7 @@ public class HUDCanvas : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        drugTransition.SetActive(false);
+        //drugTransition.SetActive(false);
     }
 
     // Update is called once per frame

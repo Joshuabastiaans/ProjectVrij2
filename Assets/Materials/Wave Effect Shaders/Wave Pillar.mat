@@ -67,10 +67,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Amplitude: 0.01
+    - _Amplitude: 0.03
     - _Edge_Blend: 0.9
     - _Effect_Radius: 18.45
-    - _Frequency: 0.53
+    - _Frequency: 0.15
     - _Gradient_Edge: 1
     - _QueueControl: 0
     - _QueueOffset: 0

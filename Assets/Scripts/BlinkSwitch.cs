@@ -6,6 +6,7 @@ public class BlinkSwitch : MonoBehaviour
 {
     [SerializeField] GameObject versionA;
     [SerializeField] GameObject versionB;
+    public bool isEnabled = true;
     bool switched;
     bool eyesClosed;
 
@@ -15,11 +16,14 @@ public class BlinkSwitch : MonoBehaviour
     void Start()
     {
         controller = FindObjectOfType<EyesController>();
+        versionB.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!isEnabled) return;
+
         if (controller.eyesClosed)
         {
             if (eyesClosed) { return; }
