@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Drug : MonoBehaviour
 {
-    [SerializeField] string sceneName;
+    [SerializeField] bool loadNextScene;
     bool taken;
 
     [SerializeField] Animator drugTransition;
@@ -28,13 +28,22 @@ public class Drug : MonoBehaviour
     public void TakeDrug()
     {
         taken = true;
-        animator.SetTrigger("dissapear");
-        drugTransition.SetTrigger("stay");
-        tripCam.SetTrigger("trip");
+        if (loadNextScene)
+        {
+            Invoke("LoadNextScene", 8);
+            animator.SetTrigger("dissapear");
+            drugTransition.SetTrigger("leave");
+        }
+        else
+        {
+            animator.SetTrigger("dissapear");
+            drugTransition.SetTrigger("stay");
+            tripCam.SetTrigger("trip");
+        }
     }
 
-    void StartTripping()
+    void LoadNextScene()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
