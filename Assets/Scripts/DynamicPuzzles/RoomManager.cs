@@ -61,7 +61,7 @@ public class RoomManager : MonoBehaviour
         else
         {
             Debug.LogWarning("No rooms have been created yet.");
-            return new Vector3(0.62f, -0.845f, -9.326f);
+            return transform.position;
         }
     }
 }
