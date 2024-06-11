@@ -1,0 +1,1629 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2789209795887807064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8279622413790857172}
+  - component: {fileID: 6699235651172051689}
+  - component: {fileID: 7896855312828353808}
+  - component: {fileID: 5519111771285704947}
+  m_Layer: 0
+  m_Name: Stair Walls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8279622413790857172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2789209795887807064}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.62166333, y: -0.62166107, z: -0.33695188, w: -0.33695063}
+  m_LocalPosition: {x: -3.5699997, y: 1.975, z: 15.164999}
+  m_LocalScale: {x: 2.8844128, y: 1, z: 1.3147999}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5934105019872582392}
+  m_LocalEulerAnglesHint: {x: -56.917, y: -180, z: -90}
+--- !u!33 &6699235651172051689
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2789209795887807064}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &7896855312828353808
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2789209795887807064}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 53d1f7b96f0dcec40ace9f3f8c4f2d8f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5519111771285704947
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2789209795887807064}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &6791744301609170456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4972881534470288106}
+  - component: {fileID: 3089311766204514715}
+  - component: {fileID: 2673642481032703424}
+  - component: {fileID: 1428326239123912221}
+  m_Layer: 0
+  m_Name: Plane for under stais
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4972881534470288106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6791744301609170456}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00016262094, y: 0.9589362, z: -0.28362176, w: 0.00019040529}
+  m_LocalPosition: {x: -0.07222748, y: 7.16, z: 11.13}
+  m_LocalScale: {x: 0.70076984, y: 1, z: 2.6464798}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5934105019872582392}
+  m_LocalEulerAnglesHint: {x: 32.953, y: 179.981, z: 0.014}
+--- !u!33 &3089311766204514715
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6791744301609170456}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &2673642481032703424
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6791744301609170456}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1428326239123912221
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6791744301609170456}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &7696147131931959998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7050880970603850138}
+  - component: {fileID: 3250046666917371126}
+  - component: {fileID: 8281076724864309017}
+  - component: {fileID: 130471888212365662}
+  m_Layer: 0
+  m_Name: Stair Walls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7050880970603850138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7696147131931959998}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.33509016, y: 0.33508918, z: -0.62266666, w: 0.62266856}
+  m_LocalPosition: {x: 3.4300003, y: 1.975, z: 15.164999}
+  m_LocalScale: {x: 2.8844125, y: 1, z: 1.3148}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5934105019872582392}
+  m_LocalEulerAnglesHint: {x: 56.574, y: 0, z: -90}
+--- !u!33 &3250046666917371126
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7696147131931959998}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &8281076724864309017
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7696147131931959998}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 53d1f7b96f0dcec40ace9f3f8c4f2d8f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &130471888212365662
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7696147131931959998}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &9200032300772108780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5934105019872582392}
+  m_Layer: 0
+  m_Name: Big Stairs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5934105019872582392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9200032300772108780}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 43, y: -0.004999995, z: 1.645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4972881534470288106}
+  - {fileID: 7050880970603850138}
+  - {fileID: 8279622413790857172}
+  - {fileID: 3432534480339336815}
+  - {fileID: 4787257729520732985}
+  - {fileID: 4036205671298298892}
+  - {fileID: 7155550271030870101}
+  - {fileID: 8068091638305364918}
+  - {fileID: 4247841186960708647}
+  - {fileID: 7058764966478239932}
+  - {fileID: 3055680412052977195}
+  - {fileID: 7903054994007185501}
+  - {fileID: 199103673038952360}
+  - {fileID: 6826705714791484254}
+  - {fileID: 393131539429390677}
+  - {fileID: 7541353094214923479}
+  - {fileID: 6008210432612128943}
+  - {fileID: 1168530846415994761}
+  - {fileID: 4658781326625346364}
+  - {fileID: 4735134334358502423}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1505416076365709161
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &7058764966478239932 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 1505416076365709161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1611186594099111808
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5549998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.7050004
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &7155550271030870101 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 1611186594099111808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1782510665663266696
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.8050003
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.205
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &7903054994007185501 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 1782510665663266696}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1938258944965573731
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.4050002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.0049996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &8068091638305364918 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 1938258944965573731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2141969642273493762
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.205
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.405
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &7541353094214923479 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 2141969642273493762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2769987732682620794
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.055
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.705
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &6008210432612128943 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 2769987732682620794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3147134370152606859
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.505
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.805
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &6826705714791484254 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 3147134370152606859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3794028915067542466
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &4735134334358502423 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 3794028915067542466}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3870520942855910633
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.754999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.305
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &4658781326625346364 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 3870520942855910633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3998716180315204844
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.855
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &4787257729520732985 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 3998716180315204844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5553766310707336153
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.705
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.4050002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &4036205671298298892 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 5553766310707336153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5756400395623199730
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.255
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.305
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &4247841186960708647 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 5756400395623199730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6535643663660161466
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00499928
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.80500007
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &3432534480339336815 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 6535643663660161466}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6878825675811295742
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.955
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.905001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &3055680412052977195 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 6878825675811295742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7288792570206804060
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.904999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.005001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &1168530846415994761 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 7288792570206804060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8098920916176084608
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.3550005
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &393131539429390677 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 8098920916176084608}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8634193340221272189
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5934105019872582392}
+    m_Modifications:
+    - target: {fileID: 3771173798446373932, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_Name
+      value: Castle Stairs_sdEvm (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07222748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.655
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.504999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4bff1a121704d47b50a9182d47de13, type: 3}
+--- !u!4 &199103673038952360 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8435676016388138965, guid: 3b4bff1a121704d47b50a9182d47de13,
+    type: 3}
+  m_PrefabInstance: {fileID: 8634193340221272189}
+  m_PrefabAsset: {fileID: 0}
