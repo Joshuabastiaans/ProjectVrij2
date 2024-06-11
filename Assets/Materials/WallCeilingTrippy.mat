@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3624847050476275578
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WallCeilingTrippy
+  m_Shader: {fileID: -6465566751694194690, guid: f67c1cc2a8337fd44ac2321473fee9eb,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_3dfe59db87e94cec985f7f418bb27903:
+        m_Texture: {fileID: 2800000, guid: fff20fa55e6dea142a97ab7636b24423, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_51235d7d432447d7a0be856d2bbf4d25:
+        m_Texture: {fileID: 2800000, guid: fa2b76d52a900394bafc59e2c57bf2d2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_51eecdf49adb4ff2adb9cf559ceefac4:
+        m_Texture: {fileID: 2800000, guid: 27e0e36a2a373d54d8ecdca6f62551ef, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_9f0346df8b384615818bbcc6815d2fb6:
+        m_Texture: {fileID: 2800000, guid: 694d1ff1b4d93854692c637c07d455ba, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - Vector1_135f577ca0f24573badd6d659f1e11b1: -1
+    - Vector1_1ba9a4da89c646fa8717a4b4ef99d52f: 0
+    - Vector1_3d3c99595cb14547b9220f4ff2e6fda5: 0.255
+    - Vector1_40534efdc8bc4634a8a472727d5a4305: 2.2
+    - Vector1_6cb11bab01a540528d3bd715da0d1230: 0.404
+    - Vector1_86c0c83a7e9f4afaaff522bf382f782c: 0.512
+    - Vector1_89959ad60caa48a0b61c03d032a6ba3d: 2.37
+    - _Amplitude: 0.0001
+    - _Blend: -1.2
+    - _Blend_Strength: -1.2
+    - _Contrast: 1.5
+    - _Edge_Blend: 0.5
+    - _Effect_Radius: 33.81
+    - _Frequency: 0.11
+    - _NormalBlend: 0
+    - _NormalStrenght: 4.62
+    - _Normal_Flip_Speed: 0.5
+    - _Normal_Strenght: 11.3
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _RippleDensity: 4.3
+    - _Size: 4.19
+    - _Speed: 1
+    - _Transparency: 1
+    m_Colors:
+    - _Ripple_Origin: {r: 0, g: 0, b: 0, a: 0}
+    - _Specular: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
