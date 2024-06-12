@@ -12,14 +12,17 @@ public class PlayerAudio : MonoBehaviour
     [SerializeField] private float velocitySoundThreshold = 0.2f;
     private EventInstance playerFootsteps;
     private EventInstance caveAmbience;
+    private EventInstance playerBreathing;
+    private FMOD.ATTRIBUTES_3D footstepAttributes;
     private FMOD.ATTRIBUTES_3D attributes;
     private Transform footstepsReferenceLocation;
+
+    private EventInstance music;
 
     // Start is called before the first frame update
     void Start()
     {
         InitializeAudio();
-
     }
 
     void InitializeAudio()
@@ -27,15 +30,25 @@ public class PlayerAudio : MonoBehaviour
         // initialize footsteps
         footstepsReferenceLocation = transform.Find("GroundCheck");
         playerFootsteps = AudioManager.instance.CreateEventInstance(FMODEvents.instance.playerFootsteps);
-        attributes = FMODUnity.RuntimeUtils.To3DAttributes(footstepsReferenceLocation);
-        playerFootsteps.set3DAttributes(attributes);
+        footstepAttributes = FMODUnity.RuntimeUtils.To3DAttributes(footstepsReferenceLocation);
+        playerFootsteps.set3DAttributes(footstepAttributes);
+
+        attributes = FMODUnity.RuntimeUtils.To3DAttributes(transform);
 
         // initialize cave ambience
         caveAmbience = AudioManager.instance.CreateEventInstance(FMODEvents.instance.caveAmbience);
         caveAmbience.start();
         caveAmbience.set3DAttributes(attributes);
 
+        // initialize player breathing
+        playerBreathing = AudioManager.instance.CreateEventInstance(FMODEvents.instance.playerBreathing);
+        playerBreathing.start();
+        playerBreathing.set3DAttributes(attributes);
 
+        // initialize music
+        music = AudioManager.instance.CreateEventInstance(FMODEvents.instance.spookyMusic);
+        music.start();
+        music.set3DAttributes(attributes);
     }
 
     // Update is called once per frame
@@ -56,9 +69,12 @@ public class PlayerAudio : MonoBehaviour
                 float timeTaken = Time.deltaTime;
                 velocity = distanceTravelled / timeTaken;
 
-                attributes = FMODUnity.RuntimeUtils.To3DAttributes(footstepsReferenceLocation);
-                playerFootsteps.set3DAttributes(attributes);
+                footstepAttributes = FMODUnity.RuntimeUtils.To3DAttributes(footstepsReferenceLocation);
+                playerFootsteps.set3DAttributes(footstepAttributes);
+                attributes = FMODUnity.RuntimeUtils.To3DAttributes(transform);
                 caveAmbience.set3DAttributes(attributes);
+                playerBreathing.set3DAttributes(attributes);
+                music.set3DAttributes(attributes);
             }
             previousPosition = currentPosition;
 
@@ -80,9 +96,10 @@ public class PlayerAudio : MonoBehaviour
         }
     }
 
-    public void LandingSound()
+    public void SetAmbienceParameter(string parameterName, float parameterValue)
     {
-
+        music.setParameterByName(parameterName, parameterValue);
+        print("Ambience parameter changed to " + parameterValue);
     }
 
     private void OnDestroy()

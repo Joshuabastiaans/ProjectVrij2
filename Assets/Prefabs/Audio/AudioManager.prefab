@@ -107,6 +107,13 @@ MonoBehaviour:
       Data3: 2143401150
       Data4: 594652654
     Path: event:/Ambience/CaveAmbience
+  <spookyMusic>k__BackingField:
+    Guid:
+      Data1: -309441338
+      Data2: 1109220501
+      Data3: 1032256693
+      Data4: 2114644747
+    Path: event:/Music/SpookyMusic
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: -62166733
@@ -114,3 +121,10 @@ MonoBehaviour:
       Data3: 813486762
       Data4: -1714510913
     Path: event:/SFX/Walking
+  <playerBreathing>k__BackingField:
+    Guid:
+      Data1: 41848278
+      Data2: 1166533186
+      Data3: 660733064
+      Data4: -1738837413
+    Path: event:/SFX/Breathing

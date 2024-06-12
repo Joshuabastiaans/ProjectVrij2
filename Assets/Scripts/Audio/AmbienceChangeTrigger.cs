@@ -7,12 +7,19 @@ public class AmbienceChangeTrigger : MonoBehaviour
     [Header("Parameter Change")]
     [SerializeField] private string parameterName;
     [SerializeField] private float parameterValue;
+    private PlayerAudio playerAudio;
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void Start()
     {
-        if (collider.tag.Equals("Player"))
+        playerAudio = FindObjectOfType<PlayerAudio>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
         {
-            AudioManager.instance.SetAmbienceParameter(parameterName, parameterValue);
+            playerAudio.SetAmbienceParameter(parameterName, parameterValue);
+            print("Ambience parameter changed to 32 " + parameterValue);
         }
     }
 }
