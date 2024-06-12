@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288571541412618379}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.57, y: -2.341, z: -16.499}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -82,9 +82,10 @@ GameObject:
   - component: {fileID: 7853199021546524485}
   - component: {fileID: 7946379948913594349}
   - component: {fileID: 3778160790122433303}
+  - component: {fileID: 7894947550580926627}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,7 +133,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1e983d58cbc9b2b47933f146d4c2a2f0, type: 2}
+  - {fileID: 2100000, guid: 8d22dda5c2062b44ba0093e9cb9554ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -207,6 +208,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsLocked: 0
   canInteract: 0
+  isOpen: 0
+  isLeftDoor: 0
+  isRightDoor: 0
+  createRoom: 0
+  createExit: 0
+--- !u!114 &7894947550580926627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009609303897529191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc4d2c8a42c8704487670a94318e79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <audioEvent>k__BackingField:
+    Guid:
+      Data1: -1712292299
+      Data2: 1230970723
+      Data3: -2019155524
+      Data4: 317490834
+    Path: event:/SFX/OpenDoor
+  playOnStart: 1
+  minDistance: 1
+  maxDistance: 20
+  updateSoundLocation: 0
+  delay: 0
 --- !u!1 &4660639670091363209
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,7 +298,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1e983d58cbc9b2b47933f146d4c2a2f0, type: 2}
+  - {fileID: 2100000, guid: 8d22dda5c2062b44ba0093e9cb9554ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

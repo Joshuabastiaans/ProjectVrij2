@@ -5,6 +5,7 @@ using System.Collections;
 public class ActionSound : MonoBehaviour
 {
     [field: SerializeField] public EventReference audioEvent { get; private set; }
+    [SerializeField] private bool playOnStart = true;
     private EventInstance audioEventInstance;
     private FMOD.ATTRIBUTES_3D attributes;
     [SerializeField] private float minDistance = 1f; // minimum distance for sound falloff
@@ -18,7 +19,10 @@ public class ActionSound : MonoBehaviour
         audioEventInstance = AudioManager.instance.CreateEventInstance(audioEvent);
         attributes = RuntimeUtils.To3DAttributes(gameObject);
         audioEventInstance.set3DAttributes(attributes);
-        PlayActionSound();
+        if (playOnStart)
+        {
+            PlayActionSound();
+        }
     }
     public void PlayActionSound()
     {

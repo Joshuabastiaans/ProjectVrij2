@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
+[RequireComponent(typeof(ActionSound))]
 public class DoorController : MonoBehaviour
 {
     public bool IsLocked = false;
@@ -18,14 +18,15 @@ public class DoorController : MonoBehaviour
     public bool createRoom = true;
     [HideInInspector] public bool createExit = false;
     bool createdExitRoom = false;
+    private ActionSound actionSound;
     void Awake()
     {
+        actionSound = GetComponent<ActionSound>();
         controls = new PlayerControls();
         controls.Player.Interact.performed += ctx =>
         {
             if (canInteract && !IsLocked)
             {
-                print(isOpen);
                 if (isOpen)
                 {
                     CloseDoor();
@@ -34,6 +35,7 @@ public class DoorController : MonoBehaviour
                 {
                     OpenDoor();
                 }
+                actionSound.PlayActionSound();
             }
         };
         if (isLeftDoor)
