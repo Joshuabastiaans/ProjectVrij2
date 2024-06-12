@@ -8,6 +8,8 @@ public class EyesController : MonoBehaviour
     [SerializeField] Animator eyeAnimator;
     private PlayerControls controls;
 
+    bool canceling;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -15,10 +17,7 @@ public class EyesController : MonoBehaviour
         controls.Player.Blink.performed += ctx => CloseEyes();
         controls.Player.Blink.canceled += ctx =>
         {
-            if (eyesClosed)
-            {
-                OpenEyes();
-            }
+            canceling = true;
         };
 
     }
@@ -44,6 +43,17 @@ public class EyesController : MonoBehaviour
         // {
         //     OpenEyes();
         // }
+
+        if (canceling)
+        {
+            canceling = true;
+
+            if (eyesClosed)
+            {
+                OpenEyes();
+                canceling = false;
+            }
+        }
     }
 
     IEnumerator OpeningEyes()
