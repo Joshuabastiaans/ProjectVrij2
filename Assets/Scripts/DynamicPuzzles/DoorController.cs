@@ -10,8 +10,8 @@ public class DoorController : MonoBehaviour
     [HideInInspector] public bool isOpen = false;
     private Animation doorAnimation;
 
-    [SerializeField] private bool isLeftDoor = false;
-    [SerializeField] private bool isRightDoor = false;
+    public bool isLeftDoor = false;
+    public bool isRightDoor = false;
     private Vector3 doorPosition = new Vector3(-2.56f, 0, 23.10f);
     PlayerControls controls;
     DoorManager doorManager;
