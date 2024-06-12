@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Blockouts/Flying Section.unity
     guid: 92dde19cdd0c25241b1e56e07570844e
+  - enabled: 1
+    path: Assets/Scenes/Blockouts/Ending.unity
+    guid: 8c07037df5717c7439156bc0132b4ee6
   m_configObjects: {}

@@ -145,12 +145,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 300
-  spinSpeed: 10
+  spinSpeed: 15
   playerBody: {fileID: 5792504037606416771}
   mouseX: 0
   mouseY: 0
   zRotation: 0
-  alwaysRotating: 0
+  alwaysRotating: 1
 --- !u!1 &700976938480813294
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +361,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 62
+  field of view: 56
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780f90e951d635f439326ea715cd97e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultFOV: 62
+  defaultFOV: 56
   maxZoomFOV: 20
   currentZoom: -0.33333334
   sensitivity: 100
@@ -507,7 +507,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 61
+  field of view: 52
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780f90e951d635f439326ea715cd97e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultFOV: 61
+  defaultFOV: 52
   maxZoomFOV: 20
   currentZoom: -0.33333334
   sensitivity: 100
@@ -715,7 +715,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 63
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -789,7 +789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780f90e951d635f439326ea715cd97e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultFOV: 63
+  defaultFOV: 60
   maxZoomFOV: 20
   currentZoom: -0.33333334
   sensitivity: 100
