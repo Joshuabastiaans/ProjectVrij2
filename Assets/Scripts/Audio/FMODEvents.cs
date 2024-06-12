@@ -8,12 +8,14 @@ public class FMODEvents : MonoBehaviour
 {
     [field: Header("Ambience")]
     [field: SerializeField] public EventReference waterDroplets { get; private set; }
+    [field: SerializeField] public EventReference caveAmbience { get; private set; }
 
     [field: Header("Music")]
-    [field: SerializeField] public EventReference caveAmbience { get; private set; }
+    [field: SerializeField] public EventReference spookyMusic { get; private set; }
 
     [field: Header("Player SFX")]
     [field: SerializeField] public EventReference playerFootsteps { get; private set; }
+    [field: SerializeField] public EventReference playerBreathing { get; private set; }
 
     public static FMODEvents instance { get; private set; }
     private Dictionary<string, string> events;
@@ -29,7 +31,10 @@ public class FMODEvents : MonoBehaviour
         events = new Dictionary<string, string>
         {
             { "playerFootsteps", "event:/Footsteps" },
-            // Add more events here
+            { "playerBreathing", "event:/Breathing" },
+            { "caveAmbience", "event:/CaveAmbience" },
+            { "waterDroplets", "event:/WaterDroplets" },
+            { "spookyMusic", "event:/SpookyMusic"},
         };
     }
 }

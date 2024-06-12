@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{a57d49db-516b-4e95-a804-fb8d68edd271}">
+		<property name="name">
+			<value>SpookyMusicVolume</value>
+		</property>
+		<relationship name="folder">
+			<destination>{9c21831e-02aa-47f5-b75e-89ae9b7f3461}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{24022b4d-8615-4646-9e66-651153d55cbd}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{24022b4d-8615-4646-9e66-651153d55cbd}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.39999997615814209</value>
+		</property>
+	</object>
+</objects>

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Labirinth 1.unity
+    guid: 8f02cc5da6655174291764e6c399dc7f
+  - enabled: 1
     path: Assets/Scenes/Blockouts/Blockout.unity
     guid: 638e2f57a57274740ae249cc1fa37da3
   - enabled: 1
