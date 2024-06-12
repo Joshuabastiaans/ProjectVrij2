@@ -6,12 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Labirinth 1.unity
-    guid: 8f02cc5da6655174291764e6c399dc7f
+    path: Assets/Scenes/Blockouts/Detailed Level.unity
+    guid: 7081107f4cd1aa74785337ca1dd7d255
   - enabled: 1
-    path: Assets/Scenes/Blockouts/Blockout.unity
-    guid: 638e2f57a57274740ae249cc1fa37da3
-  - enabled: 1
-    path: Assets/Scenes/Demo/Act 1.unity
-    guid: ca1c11a7bb1536c45aec7288156b86c9
+    path: Assets/Scenes/Blockouts/Flying Section.unity
+    guid: 92dde19cdd0c25241b1e56e07570844e
   m_configObjects: {}

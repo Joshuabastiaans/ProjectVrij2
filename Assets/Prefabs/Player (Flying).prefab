@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 773008616118757392}
   - component: {fileID: 7822154982431594154}
   - component: {fileID: 910508742441883645}
+  - component: {fileID: 8626238944119171258}
   m_Layer: 9
   m_Name: Player (Flying)
   m_TagString: Player
@@ -131,6 +132,25 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &8626238944119171258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337665873078348126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7167f0f54cc452a46a82ebb28c78c8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 300
+  spinSpeed: 10
+  playerBody: {fileID: 5792504037606416771}
+  mouseX: 0
+  mouseY: 0
+  zRotation: 0
+  alwaysRotating: 0
 --- !u!1 &700976938480813294
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,7 +807,6 @@ GameObject:
   - component: {fileID: 6349804342362311156}
   - component: {fileID: 5533088378798183897}
   - component: {fileID: 103473782784448427}
-  - component: {fileID: 2524140872522804462}
   m_Layer: 9
   m_Name: Camera1
   m_TagString: MainCamera
@@ -935,22 +954,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attenuationObject: {fileID: 0}
---- !u!114 &2524140872522804462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8935726837768485869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7167f0f54cc452a46a82ebb28c78c8d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 300
-  spinSpeed: 10
-  playerBody: {fileID: 7896760678916385340}
-  mouseX: 0
-  mouseY: 0
-  zRotation: 0
-  alwaysRotating: 1
