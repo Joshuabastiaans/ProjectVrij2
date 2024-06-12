@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WallFloorTrippy 1
+  m_Name: WallFloor
   m_Shader: {fileID: -6465566751694194690, guid: f67c1cc2a8337fd44ac2321473fee9eb,
     type: 3}
   m_Parent: {fileID: 0}
@@ -76,20 +76,20 @@ Material:
     - Vector1_89959ad60caa48a0b61c03d032a6ba3d: 2.8
     - _Amplitude: 0
     - _Blend: -1.8
-    - _Blend_Strength: -1.2
-    - _Contrast: 1.5
-    - _Edge_Blend: -22.73
-    - _Effect_Radius: 0.27
+    - _Blend_Strength: 0
+    - _Contrast: 0
+    - _Edge_Blend: 0
+    - _Effect_Radius: 0
     - _Frequency: 0
     - _NormalBlend: 0
     - _NormalStrenght: 4
     - _Normal_Flip_Speed: 0
-    - _Normal_Strenght: 1
+    - _Normal_Strenght: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RippleDensity: 10
-    - _Size: 3.5
-    - _Speed: 1
+    - _RippleDensity: 0
+    - _Size: 0
+    - _Speed: 0
     - _Transparency: 1
     m_Colors:
     - _Ripple_Origin: {r: 0, g: 0, b: 0, a: 0}
