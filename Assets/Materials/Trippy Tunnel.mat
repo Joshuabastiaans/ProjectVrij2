@@ -80,16 +80,16 @@ Material:
     - _Contrast: 1.5
     - _Edge_Blend: 0.5
     - _Effect_Radius: 18
-    - _Frequency: 1
+    - _Frequency: 0.2
     - _NormalBlend: 0
     - _NormalStrenght: 4
     - _Normal_Flip_Speed: 0
-    - _Normal_Strenght: 1
+    - _Normal_Strenght: 0.63
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RippleDensity: 117.88
     - _Size: 3.5
-    - _Speed: 1
+    - _Speed: 2.02
     - _Transparency: 1
     m_Colors:
     - _Ripple_Origin: {r: 0, g: 0, b: 0, a: 0}

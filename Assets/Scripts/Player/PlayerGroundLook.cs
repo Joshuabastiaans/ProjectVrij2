@@ -9,7 +9,7 @@ public class PlayerGroundLook : MonoBehaviour
     public float gamepadSensitivity = 100f;
     private Vector2 lookInput;
     private float xRotation = 0f;
-    private Transform camTransform;
+    private followCamera[] cameras;
 
     void Awake()
     {
@@ -17,7 +17,8 @@ public class PlayerGroundLook : MonoBehaviour
         controls.Player.Look.performed += ctx => Look(ctx.ReadValue<Vector2>());
         controls.Player.Look.canceled += ctx => Look(Vector2.zero);
         playerBody = GameObject.FindGameObjectWithTag("Player").transform;
-        camTransform = transform.parent;
+        cameras = GetComponentsInChildren<followCamera>();
+
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -34,6 +35,10 @@ public class PlayerGroundLook : MonoBehaviour
     void Update()
     {
         LookInput();
+        for (int i = 0; i < cameras.Length; i++)
+        {
+            cameras[i].target = transform;
+        }
     }
 
     void Look(Vector2 input)
