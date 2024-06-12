@@ -1,5 +1,61 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &888595797086935616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 682048783183106603}
+  - component: {fileID: 1912724269625917981}
+  m_Layer: 0
+  m_Name: WaterDroplet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &682048783183106603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888595797086935616}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.64, y: 0, z: -2.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512733718073597642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1912724269625917981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888595797086935616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc4d2c8a42c8704487670a94318e79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <audioEvent>k__BackingField:
+    Guid:
+      Data1: 932147362
+      Data2: 1306880295
+      Data3: 504389040
+      Data4: -1374344548
+    Path: event:/SFX/WaterDroplets
+  playOnStart: 1
+  minDistance: 1
+  maxDistance: 20
+  updateSoundLocation: 0
+  delay: 0
 --- !u!1 &927275466224675012
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +314,40 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4226680744618710253, guid: 966fc67c51bc3a341af50a4bddcdf75d, type: 3}
+--- !u!1 &2022502040679238120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 512733718073597642}
+  m_Layer: 0
+  m_Name: WaterDroplets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &512733718073597642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022502040679238120}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.6188998, y: 0.8449993, z: 9.326}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 682048783183106603}
+  - {fileID: 8797316163329765253}
+  - {fileID: 6396199506699399222}
+  m_Father: {fileID: 5992189797922672821}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2287383293586391946
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,6 +695,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af008b4251c73694f9c7cd3a92562640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &3696279764106751415
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6396199506699399222}
+  - component: {fileID: 8676287430698120796}
+  m_Layer: 0
+  m_Name: WaterDroplet (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6396199506699399222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3696279764106751415}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.202, y: 0, z: 4.947}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512733718073597642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8676287430698120796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3696279764106751415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc4d2c8a42c8704487670a94318e79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <audioEvent>k__BackingField:
+    Guid:
+      Data1: 932147362
+      Data2: 1306880295
+      Data3: 504389040
+      Data4: -1374344548
+    Path: event:/SFX/WaterDroplets
+  playOnStart: 1
+  minDistance: 1
+  maxDistance: 20
+  updateSoundLocation: 0
+  delay: 0
 --- !u!1 &4378397447237491051
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,6 +765,7 @@ GameObject:
   - component: {fileID: 1813879391770313109}
   - component: {fileID: 1250165977746055522}
   - component: {fileID: 4434965685158560838}
+  - component: {fileID: 392677758932395761}
   m_Layer: 0
   m_Name: Door
   m_TagString: Door
@@ -749,6 +896,30 @@ MonoBehaviour:
   isRightDoor: 1
   createRoom: 1
   createExit: 0
+--- !u!114 &392677758932395761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4378397447237491051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc4d2c8a42c8704487670a94318e79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <audioEvent>k__BackingField:
+    Guid:
+      Data1: -1712292299
+      Data2: 1230970723
+      Data3: -2019155524
+      Data4: 317490834
+    Path: event:/SFX/OpenDoor
+  playOnStart: 1
+  minDistance: 1
+  maxDistance: 20
+  updateSoundLocation: 0
+  delay: 0
 --- !u!1 &4464873634005511187
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,6 +1136,7 @@ Transform:
   - {fileID: 5146583756654881192}
   - {fileID: 172350791578014099}
   - {fileID: 7167453678865980300}
+  - {fileID: 512733718073597642}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4645535056773078864
@@ -1686,6 +1858,7 @@ GameObject:
   - component: {fileID: 5257378390691456429}
   - component: {fileID: 7977967548773983338}
   - component: {fileID: 718491051556904082}
+  - component: {fileID: 4429730326449513336}
   m_Layer: 0
   m_Name: Door
   m_TagString: Door
@@ -1816,6 +1989,86 @@ MonoBehaviour:
   isRightDoor: 0
   createRoom: 1
   createExit: 0
+--- !u!114 &4429730326449513336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7305573710560094848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc4d2c8a42c8704487670a94318e79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <audioEvent>k__BackingField:
+    Guid:
+      Data1: -1712292299
+      Data2: 1230970723
+      Data3: -2019155524
+      Data4: 317490834
+    Path: event:/SFX/OpenDoor
+  playOnStart: 1
+  minDistance: 1
+  maxDistance: 20
+  updateSoundLocation: 0
+  delay: 0
+--- !u!1 &7343900125841448029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8797316163329765253}
+  - component: {fileID: 1115114286114848782}
+  m_Layer: 0
+  m_Name: WaterDroplet (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8797316163329765253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7343900125841448029}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.41, y: 0, z: -7.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512733718073597642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1115114286114848782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7343900125841448029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc4d2c8a42c8704487670a94318e79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <audioEvent>k__BackingField:
+    Guid:
+      Data1: 932147362
+      Data2: 1306880295
+      Data3: 504389040
+      Data4: -1374344548
+    Path: event:/SFX/WaterDroplets
+  playOnStart: 1
+  minDistance: 1
+  maxDistance: 20
+  updateSoundLocation: 0
+  delay: 0
 --- !u!1001 &1861048224654052849
 PrefabInstance:
   m_ObjectHideFlags: 0
