@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using FMOD.Studio;
+using System.Collections;
 
 public class PlayerAudio : MonoBehaviour
 {
@@ -13,9 +14,11 @@ public class PlayerAudio : MonoBehaviour
     private EventInstance playerFootsteps;
     private EventInstance caveAmbience;
     private EventInstance playerBreathing;
+    private EventInstance darkWave;
     private FMOD.ATTRIBUTES_3D footstepAttributes;
     private FMOD.ATTRIBUTES_3D attributes;
     private Transform footstepsReferenceLocation;
+
 
     private EventInstance music;
 
@@ -49,6 +52,11 @@ public class PlayerAudio : MonoBehaviour
         music = AudioManager.instance.CreateEventInstance(FMODEvents.instance.spookyMusic);
         music.start();
         music.set3DAttributes(attributes);
+
+        // initialize dark wave
+        darkWave = AudioManager.instance.CreateEventInstance(FMODEvents.instance.darkWave);
+        darkWave.set3DAttributes(attributes);
+
     }
 
     // Update is called once per frame
@@ -106,5 +114,19 @@ public class PlayerAudio : MonoBehaviour
     {
         playerFootsteps.release();
         caveAmbience.release();
+    }
+
+    public void PlayDarkWave()
+    {
+        StartCoroutine(playSoundCoroutine(darkWave, 3, 5f));
+    }
+
+    IEnumerator playSoundCoroutine(EventInstance soundInstance, int amount, float timeInBetween)
+    {
+        for (int i = 0; i < amount; i++)
+        {
+            soundInstance.start();
+            yield return new WaitForSeconds(timeInBetween);
+        }
     }
 }

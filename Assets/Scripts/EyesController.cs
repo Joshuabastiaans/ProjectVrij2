@@ -5,28 +5,45 @@ using UnityEngine;
 public class EyesController : MonoBehaviour
 {
     public bool eyesClosed;
-    [SerializeField] KeyCode eyesInput = KeyCode.Mouse1;
-
     [SerializeField] Animator eyeAnimator;
+    private PlayerControls controls;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        controls = new PlayerControls();
+        controls.Player.Blink.performed += ctx => CloseEyes();
+        controls.Player.Blink.canceled += ctx =>
+        {
+            if (eyesClosed)
+            {
+                OpenEyes();
+            }
+        };
+
     }
+
+    void OnEnable()
+    {
+        controls.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Disable();
+    }
+
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(eyesInput))
-        {
-            CloseEyes();
-        }
+        // CloseEyes();
 
-        if (!Input.GetKey(eyesInput) && eyesClosed)
-        {
-            OpenEyes();
-        }
+
+        // if (eyesClosed)
+        // {
+        //     OpenEyes();
+        // }
     }
 
     IEnumerator OpeningEyes()

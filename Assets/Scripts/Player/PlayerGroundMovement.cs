@@ -35,6 +35,7 @@ public class PlayerGroundMovement : MonoBehaviour
         controls = new PlayerControls();
         controls.Player.Move.performed += ctx => movement = ctx.ReadValue<Vector2>();
         controls.Player.Move.canceled += ctx => movement = Vector2.zero;
+        controls.Player.Jump.performed += ctx => Jumping();
         controls.Player.Run.performed += ctx => IsRunning = true;
         controls.Player.Run.canceled += ctx => IsRunning = false;
     }
@@ -63,7 +64,6 @@ public class PlayerGroundMovement : MonoBehaviour
     {
         Running();
         Move();
-        Jumping();
         SimulateGravity();
     }
 
@@ -95,7 +95,7 @@ public class PlayerGroundMovement : MonoBehaviour
 
     void Jumping()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
+        if (IsGrounded())
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2 * gravityForce);
         }
