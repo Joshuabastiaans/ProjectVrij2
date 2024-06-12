@@ -27,7 +27,7 @@ public class DoorManager : MonoBehaviour
 
     public void CreateExit(Vector3 doorPosition)
     {
-        roomManager.GenerateExit(doorPosition);
+        roomManager.DisableRooms();
 
         return;
     }

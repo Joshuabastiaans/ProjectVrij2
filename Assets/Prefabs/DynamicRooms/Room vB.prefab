@@ -1101,6 +1101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5992189797922672821}
+  - component: {fileID: 6180073650224314702}
   m_Layer: 0
   m_Name: Room vB
   m_TagString: Untagged
@@ -1139,6 +1140,23 @@ Transform:
   - {fileID: 512733718073597642}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &6180073650224314702
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4608768808463458242}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: fa3e6f5f83084374ab7b04adefcc8ffd, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 87d2c6f5c59031a4a9d6fc3cf454bb69, type: 2}
+  - {fileID: 7400000, guid: 1ce3844d5fb45c849a0d780505446243, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &4645535056773078864
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,20 +7,61 @@ public class RoomManager : MonoBehaviour
     public GameObject exitPrefab;
     private int roomIDCounter = 0;
     private Dictionary<int, GameObject> roomDictionary = new Dictionary<int, GameObject>();
-
+    public int currentRoomID = 0;
     [HideInInspector] public bool createExit = false;
+    public GameObject firstRoom;
+    [HideInInspector] public bool isLeftDoor = false;
+    [HideInInspector] public bool isRightDoor = false;
+
+    private GameObject currentRoom;
     public void GenerateRoom(Vector3 relativePosition)
     {
 
         GameObject room = Instantiate(roomPrefab, GetLastRoomPosition() + relativePosition, Quaternion.identity);
         roomIDCounter++;
-        room.name = "Room_" + roomIDCounter; // Optional: Name the room for easier debugging
+        room.name = "Room_" + roomIDCounter;
         roomDictionary.Add(roomIDCounter, room);
     }
 
     public void GenerateExit(Vector3 relativePosition)
     {
         Instantiate(exitPrefab, GetLastRoomPosition() + relativePosition, Quaternion.identity);
+    }
+
+    public void DisableRooms()
+    {
+        print("Disabling rooms" + currentRoomID);
+
+        if (currentRoomID != 0)
+        {
+            firstRoom.SetActive(false);
+            if (isLeftDoor)
+            {
+                firstRoom.GetComponent<Animation>().Play("RightDoorFuck");
+            }
+            else if (isRightDoor)
+            {
+                firstRoom.GetComponent<Animation>().Play("LeftDoorFuck");
+            }
+        }
+        foreach (var roomID in roomDictionary.Keys)
+        {
+            if (roomID < currentRoomID)
+            {
+                roomDictionary[roomID].SetActive(false);
+            }
+        }
+        currentRoom = roomDictionary[currentRoomID];
+        if (isLeftDoor)
+        {
+            currentRoom.GetComponent<Animation>().Play("RightDoorFuck");
+        }
+        else if (isRightDoor)
+        {
+            currentRoom.GetComponent<Animation>().Play("LeftDoorFuck");
+        }
+
+
     }
 
     public void DestroyRoom(int roomID)
