@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tunnel Pieces Trippy
+  m_Name: Trippy Tunnel
   m_Shader: {fileID: -6465566751694194690, guid: f67c1cc2a8337fd44ac2321473fee9eb,
     type: 3}
   m_Parent: {fileID: 0}
@@ -74,12 +74,12 @@ Material:
     - Vector1_6cb11bab01a540528d3bd715da0d1230: 0.404
     - Vector1_86c0c83a7e9f4afaaff522bf382f782c: 0.512
     - Vector1_89959ad60caa48a0b61c03d032a6ba3d: 2.8
-    - _Amplitude: 0.5
+    - _Amplitude: 0.0001
     - _Blend: -1.8
     - _Blend_Strength: -1.2
     - _Contrast: 1.5
-    - _Edge_Blend: 1
-    - _Effect_Radius: 342.27
+    - _Edge_Blend: 0.5
+    - _Effect_Radius: 18
     - _Frequency: 1
     - _NormalBlend: 0
     - _NormalStrenght: 4
@@ -87,7 +87,7 @@ Material:
     - _Normal_Strenght: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RippleDensity: 3.15
+    - _RippleDensity: 117.88
     - _Size: 3.5
     - _Speed: 1
     - _Transparency: 1
