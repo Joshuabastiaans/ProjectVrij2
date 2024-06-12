@@ -59,11 +59,11 @@ Material:
     - Vector1_3d3c99595cb14547b9220f4ff2e6fda5: 0.25
     - Vector1_40534efdc8bc4634a8a472727d5a4305: 2
     - Vector1_6cb11bab01a540528d3bd715da0d1230: 1
-    - Vector1_86c0c83a7e9f4afaaff522bf382f782c: 1
-    - Vector1_89959ad60caa48a0b61c03d032a6ba3d: 1
+    - Vector1_86c0c83a7e9f4afaaff522bf382f782c: 0.183
+    - Vector1_89959ad60caa48a0b61c03d032a6ba3d: 10
     - _Amplitude: 0
-    - _Blend_Strength: 0.5
-    - _Contrast: 1.5
+    - _Blend_Strength: -4
+    - _Contrast: 0.5
     - _Edge_Blend: 0.5
     - _Effect_Radius: 1
     - _Frequency: 1
@@ -72,8 +72,8 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RippleDensity: 3.5
-    - _Size: 1
-    - _Speed: 1
+    - _Size: 4.9
+    - _Speed: 10
     - _Transparency: 1
     m_Colors:
     - _Ripple_Origin: {r: 0, g: 0, b: 0, a: 0}
