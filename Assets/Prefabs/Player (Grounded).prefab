@@ -157,6 +157,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5882437346882877853, guid: d4dddf18c1b545f4c84dc197fdfa3346,
+        type: 3}
+      propertyPath: attenuationObject
+      value: 
+      objectReference: {fileID: 1031590900516191526}
     - target: {fileID: 719035765010273359, guid: d4dddf18c1b545f4c84dc197fdfa3346,
         type: 3}
       propertyPath: m_Layer
@@ -397,6 +402,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 9168622826865363493}
+    - targetCorrespondingSourceObject: {fileID: 2886451416495265232, guid: d4dddf18c1b545f4c84dc197fdfa3346,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1814248885761228194}
   m_SourcePrefab: {fileID: 100100000, guid: d4dddf18c1b545f4c84dc197fdfa3346, type: 3}
 --- !u!1 &1031590900516191526 stripped
 GameObject:
@@ -462,6 +471,20 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1814248885761228194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031590900516191526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92557b35ceff2864dbebeae976557b00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGrounded: 1
+  velocitySoundThreshold: 2
 --- !u!4 &7639536588112871855 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5502088390662957401, guid: d4dddf18c1b545f4c84dc197fdfa3346,

@@ -32,6 +32,8 @@ public class PlayerAudio : MonoBehaviour
 
         // initialize cave ambience
         caveAmbience = AudioManager.instance.CreateEventInstance(FMODEvents.instance.caveAmbience);
+        caveAmbience.start();
+        caveAmbience.set3DAttributes(attributes);
 
 
     }
@@ -53,12 +55,12 @@ public class PlayerAudio : MonoBehaviour
                 float distanceTravelled = Vector3.Distance(previousPosition, currentPosition);
                 float timeTaken = Time.deltaTime;
                 velocity = distanceTravelled / timeTaken;
+
+                attributes = FMODUnity.RuntimeUtils.To3DAttributes(footstepsReferenceLocation);
+                playerFootsteps.set3DAttributes(attributes);
+                caveAmbience.set3DAttributes(attributes);
             }
             previousPosition = currentPosition;
-
-
-            attributes = FMODUnity.RuntimeUtils.To3DAttributes(footstepsReferenceLocation);
-            playerFootsteps.set3DAttributes(attributes);
 
             if (velocity > velocitySoundThreshold)
             {
@@ -67,6 +69,7 @@ public class PlayerAudio : MonoBehaviour
 
                 if (playbackState != PLAYBACK_STATE.PLAYING)
                 {
+                    print("playing footsteps");
                     playerFootsteps.start();
                 }
             }
@@ -85,5 +88,6 @@ public class PlayerAudio : MonoBehaviour
     private void OnDestroy()
     {
         playerFootsteps.release();
+        caveAmbience.release();
     }
 }

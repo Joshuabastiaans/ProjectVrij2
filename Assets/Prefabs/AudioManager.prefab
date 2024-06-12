@@ -95,22 +95,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <waterDroplets>k__BackingField:
     Guid:
-      Data1: 126645350
-      Data2: 1206878000
-      Data3: -1372597097
-      Data4: 293000938
-    Path: event:/SFX/Footsteps
-  <darkAmbience>k__BackingField:
+      Data1: -62166733
+      Data2: 1125774193
+      Data3: 813486762
+      Data4: -1714510913
+    Path: event:/SFX/Walking
+  <caveAmbience>k__BackingField:
     Guid:
-      Data1: 126645350
-      Data2: 1206878000
-      Data3: -1372597097
-      Data4: 293000938
-    Path: event:/SFX/Footsteps
+      Data1: -735279695
+      Data2: 1167270199
+      Data3: 2143401150
+      Data4: 594652654
+    Path: event:/Ambience/CaveAmbience
   <playerFootsteps>k__BackingField:
     Guid:
-      Data1: 126645350
-      Data2: 1206878000
-      Data3: -1372597097
-      Data4: 293000938
-    Path: event:/SFX/Footsteps
+      Data1: -62166733
+      Data2: 1125774193
+      Data3: 813486762
+      Data4: -1714510913
+    Path: event:/SFX/Walking
