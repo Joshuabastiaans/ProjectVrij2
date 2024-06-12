@@ -38,10 +38,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _Amplitude: 0.0005
+    - _Blend_Strength: -0.5
     - _Contrast: 0.83
     - _Frequency: 0.1
     - _Normal_Strength: 10
-    - _Size: 1.66
+    - _Size: 2.8
     - _Speed: 0.2
     m_Colors: []
   m_BuildTextureStacks: []
