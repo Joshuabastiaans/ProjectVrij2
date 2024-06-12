@@ -73,7 +73,7 @@ Material:
     - _QueueOffset: 0
     - _RippleDensity: 3.5
     - _Size: 4.9
-    - _Speed: 10
+    - _Speed: 2.97
     - _Transparency: 1
     m_Colors:
     - _Ripple_Origin: {r: 0, g: 0, b: 0, a: 0}
