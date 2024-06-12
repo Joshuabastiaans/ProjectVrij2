@@ -9602,6 +9602,11 @@ PrefabInstance:
       propertyPath: reticle
       value: 
       objectReference: {fileID: 594900665}
+    - target: {fileID: 3848860725456487277, guid: c7c81c4549fadcf48816c4db98473f07,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7639536588112871855, guid: c7c81c4549fadcf48816c4db98473f07,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9655,7 +9660,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 991894961306037095, guid: c7c81c4549fadcf48816c4db98473f07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1662476446}
   m_SourcePrefab: {fileID: 100100000, guid: c7c81c4549fadcf48816c4db98473f07, type: 3}
 --- !u!1 &379370100
 GameObject:
@@ -36831,6 +36840,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1656913169}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1662476444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 991894961306037095, guid: c7c81c4549fadcf48816c4db98473f07,
+    type: 3}
+  m_PrefabInstance: {fileID: 377995158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1662476446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662476444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f105c61602bb1f43aafc3617b248cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 10
+  gamepadSensitivity: 10
 --- !u!1001 &1671921514
 PrefabInstance:
   m_ObjectHideFlags: 0
