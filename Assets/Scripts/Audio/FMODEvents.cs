@@ -17,6 +17,11 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference playerFootsteps { get; private set; }
     [field: SerializeField] public EventReference playerBreathing { get; private set; }
 
+    [field: Header("SFX")]
+    [field: SerializeField] public EventReference suckSound { get; private set; }
+    [field: SerializeField] public EventReference darkWave { get; private set; }
+
+
     public static FMODEvents instance { get; private set; }
     private Dictionary<string, string> events;
 

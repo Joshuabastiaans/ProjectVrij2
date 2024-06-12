@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMOD.Studio;
 
 public class Drug : MonoBehaviour
 {
@@ -10,24 +11,32 @@ public class Drug : MonoBehaviour
 
     [SerializeField] Animator drugTransition;
     [SerializeField] Animator tripCam;
-
+    private AmbienceMusicChange ambienceMusicChange;
+    private FMOD.ATTRIBUTES_3D attributes;
+    private EventInstance suckSoundInstance;
     Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        ambienceMusicChange = GetComponent<AmbienceMusicChange>();
+        attributes = FMODUnity.RuntimeUtils.To3DAttributes(transform);
+        suckSoundInstance = AudioManager.instance.CreateEventInstance(FMODEvents.instance.suckSound);
+        suckSoundInstance.set3DAttributes(attributes);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void TakeDrug()
     {
         if (taken) return;
+        suckSoundInstance.start();
+        ambienceMusicChange.ParameterChange();
         taken = true;
         if (loadNextScene)
         {
