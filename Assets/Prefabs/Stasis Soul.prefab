@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8757210519035613805
+--- !u!1 &3802392028121894001
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7137163455991308069}
-  - component: {fileID: 1542169136341051283}
-  - component: {fileID: 2504592016960999841}
+  - component: {fileID: 6051991146372583064}
+  - component: {fileID: 7923408321374394408}
+  - component: {fileID: 5891537895882742318}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -18,33 +18,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7137163455991308069
+--- !u!4 &6051991146372583064
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8757210519035613805}
+  m_GameObject: {fileID: 3802392028121894001}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.00363, y: -0.00867, z: 0.0264}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3408544425652812104}
+  m_Father: {fileID: 3325579755964101368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &1542169136341051283
+--- !u!108 &7923408321374394408
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8757210519035613805}
+  m_GameObject: {fileID: 3802392028121894001}
   m_Enabled: 1
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -95,13 +95,13 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &2504592016960999841
+--- !u!114 &5891537895882742318
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8757210519035613805}
+  m_GameObject: {fileID: 3802392028121894001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1001 &2938366098255453859
+--- !u!1001 &3002894169862903059
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -144,17 +144,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f65dad5918f0b664082456b4ecb4ad5c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27.005491
+      value: 32.24407
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f65dad5918f0b664082456b4ecb4ad5c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.009
+      value: -0.22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f65dad5918f0b664082456b4ecb4ad5c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 224.1294
+      value: 213.70459
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f65dad5918f0b664082456b4ecb4ad5c,
         type: 3}
@@ -195,11 +195,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: dd67b589e229c5d468a0152fe9348d6f, type: 2}
+      objectReference: {fileID: 2100000, guid: 429a77d75e57ece4cb7c3b153968c462, type: 2}
     - target: {fileID: 919132149155446097, guid: f65dad5918f0b664082456b4ecb4ad5c,
         type: 3}
       propertyPath: m_Name
-      value: GHOST
+      value: Stasis Soul
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -207,12 +207,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f65dad5918f0b664082456b4ecb4ad5c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7137163455991308069}
+      addedObject: {fileID: 6051991146372583064}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f65dad5918f0b664082456b4ecb4ad5c, type: 3}
---- !u!4 &3408544425652812104 stripped
+--- !u!4 &3325579755964101368 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f65dad5918f0b664082456b4ecb4ad5c,
     type: 3}
-  m_PrefabInstance: {fileID: 2938366098255453859}
+  m_PrefabInstance: {fileID: 3002894169862903059}
   m_PrefabAsset: {fileID: 0}

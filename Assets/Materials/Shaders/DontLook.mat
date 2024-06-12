@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3624847050476275578
+--- !u!114 &-6860248497718819592
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,14 +20,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WallFloorTrippy 1
-  m_Shader: {fileID: -6465566751694194690, guid: f67c1cc2a8337fd44ac2321473fee9eb,
+  m_Name: DontLook
+  m_Shader: {fileID: -6465566751694194690, guid: 5514bbc441a220240a101fa510e70883,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -37,20 +37,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_3dfe59db87e94cec985f7f418bb27903:
-        m_Texture: {fileID: 2800000, guid: dd031936fab7dec47bc1d0b9e8b0d14b, type: 3}
+    - _Diffuse:
+        m_Texture: {fileID: 2800000, guid: eb043503767fd7342be4dbf269eb6e21, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - Texture2D_51235d7d432447d7a0be856d2bbf4d25:
-        m_Texture: {fileID: 2800000, guid: dd031936fab7dec47bc1d0b9e8b0d14b, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_51eecdf49adb4ff2adb9cf559ceefac4:
-        m_Texture: {fileID: 2800000, guid: b91ac53b783070140b65188aecd97c31, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_9f0346df8b384615818bbcc6815d2fb6:
-        m_Texture: {fileID: 2800000, guid: b91ac53b783070140b65188aecd97c31, type: 3}
+    - _Normal:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -67,31 +59,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Vector1_135f577ca0f24573badd6d659f1e11b1: 2.3
-    - Vector1_1ba9a4da89c646fa8717a4b4ef99d52f: 0
-    - Vector1_3d3c99595cb14547b9220f4ff2e6fda5: 0.255
-    - Vector1_40534efdc8bc4634a8a472727d5a4305: 2.2
-    - Vector1_6cb11bab01a540528d3bd715da0d1230: 0.404
-    - Vector1_86c0c83a7e9f4afaaff522bf382f782c: 0.512
-    - Vector1_89959ad60caa48a0b61c03d032a6ba3d: 2.8
     - _Amplitude: 0
-    - _Blend: -1.8
-    - _Blend_Strength: -1.2
+    - _Blend_Strength: 0
     - _Contrast: 1.5
-    - _Edge_Blend: -22.73
-    - _Effect_Radius: 0.27
-    - _Frequency: 0
-    - _NormalBlend: 0
-    - _NormalStrenght: 4
-    - _Normal_Flip_Speed: 0
-    - _Normal_Strenght: 1
+    - _Edge_Blend: 0.5
+    - _Effect_Radius: 1
+    - _Frequency: 1
+    - _Normal_Flip_Speed: 0.5
+    - _Normal_Strength: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RippleDensity: 10
-    - _Size: 3.5
+    - _Ripple_Density: 3.5
+    - _Size: 1
     - _Speed: 1
-    - _Transparency: 1
     m_Colors:
     - _Ripple_Origin: {r: 0, g: 0, b: 0, a: 0}
-    - _Specular: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
