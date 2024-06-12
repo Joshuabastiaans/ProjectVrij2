@@ -135,3 +135,10 @@ MonoBehaviour:
       Data3: -1020314746
       Data4: -1895049273
     Path: event:/SFX/Suffocate
+  <darkWave>k__BackingField:
+    Guid:
+      Data1: 1529567372
+      Data2: 1324295063
+      Data3: -1859038814
+      Data4: -1740457958
+    Path: event:/Ambience/DarkWaves

@@ -14,8 +14,9 @@ public class Drug : MonoBehaviour
     private AmbienceMusicChange ambienceMusicChange;
     private FMOD.ATTRIBUTES_3D attributes;
     private EventInstance suckSoundInstance;
+    public bool darkWave;
     Animator animator;
-
+    PlayerAudio playerAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class Drug : MonoBehaviour
         attributes = FMODUnity.RuntimeUtils.To3DAttributes(transform);
         suckSoundInstance = AudioManager.instance.CreateEventInstance(FMODEvents.instance.suckSound);
         suckSoundInstance.set3DAttributes(attributes);
+        playerAudio = FindObjectOfType<PlayerAudio>();
     }
 
     // Update is called once per frame
@@ -38,6 +40,11 @@ public class Drug : MonoBehaviour
         suckSoundInstance.start();
         ambienceMusicChange.ParameterChange();
         taken = true;
+        if (darkWave)
+        {
+            playerAudio.PlayDarkWave();
+        }
+
         if (loadNextScene)
         {
             Invoke("LoadNextScene", 8);

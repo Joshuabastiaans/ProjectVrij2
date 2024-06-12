@@ -14,8 +14,8 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0, g: 0, b: 0, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.11854756, g: 0.11854756, b: 0.11854756, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.02
   m_LinearFogStart: 0
@@ -14463,16 +14463,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: DRUG
       objectReference: {fileID: 0}
-    - target: {fileID: 2344035664326447596, guid: 631be1cf3b9ed864e971216f190ecefb,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3cf600412f974604e9d4f4b498452d65, type: 2}
     - target: {fileID: 5015810220864171663, guid: 631be1cf3b9ed864e971216f190ecefb,
         type: 3}
       propertyPath: tripCam
       value: 
       objectReference: {fileID: 312202927}
+    - target: {fileID: 5015810220864171663, guid: 631be1cf3b9ed864e971216f190ecefb,
+        type: 3}
+      propertyPath: darkWave
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5015810220864171663, guid: 631be1cf3b9ed864e971216f190ecefb,
         type: 3}
       propertyPath: drugTransition

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4589914301570672687}
   - component: {fileID: 4539554766150056388}
   - component: {fileID: 8350640652170448053}
+  - component: {fileID: 6894906530421867515}
   m_Layer: 8
   m_Name: DRUG
   m_TagString: Untagged
@@ -120,6 +121,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6894906530421867515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2259096709196013232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9dcf75a67e06a4ebaff9fd2c4a0157, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameterName: SpookyMusicVolume
+  parameterValue: 1
 --- !u!1001 &8735778707304549396
 PrefabInstance:
   m_ObjectHideFlags: 0

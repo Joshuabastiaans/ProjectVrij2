@@ -116,9 +116,9 @@ public class PlayerAudio : MonoBehaviour
         caveAmbience.release();
     }
 
-    public void PlaySound(EventInstance soundInstance)
+    public void PlayDarkWave()
     {
-        StartCoroutine(playSoundCoroutine(soundInstance, 3, 5f));
+        StartCoroutine(playSoundCoroutine(darkWave, 3, 5f));
     }
 
     IEnumerator playSoundCoroutine(EventInstance soundInstance, int amount, float timeInBetween)
