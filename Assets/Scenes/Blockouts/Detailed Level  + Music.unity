@@ -9602,15 +9602,10 @@ PrefabInstance:
       propertyPath: reticle
       value: 
       objectReference: {fileID: 594900665}
-    - target: {fileID: 1879749852689650458, guid: c7c81c4549fadcf48816c4db98473f07,
-        type: 3}
-      propertyPath: playerCameraTransform
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7639536588112871855, guid: c7c81c4549fadcf48816c4db98473f07,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.676
+      value: -35.867
       objectReference: {fileID: 0}
     - target: {fileID: 7639536588112871855, guid: c7c81c4549fadcf48816c4db98473f07,
         type: 3}
@@ -38151,11 +38146,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Camera Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 5300592414060691432, guid: 4f023240892c34e4ca7e4ec4569b5502,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
