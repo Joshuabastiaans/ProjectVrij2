@@ -51,7 +51,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Amplitude: 0.0001
+    - _Amplitude: 0.001
     - _Edge_Blend: 0.5
     - _Effect_Radius: 1
     - _FadeAmount: 0.52

@@ -53,7 +53,7 @@ Material:
     - _Effect_Radius: 1
     - _Frequency: 0.1
     - _Normal_Flip_Speed: 0.5
-    - _Normal_Strength: 20
+    - _Normal_Strength: 5
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Ripple_Density: 3.5
