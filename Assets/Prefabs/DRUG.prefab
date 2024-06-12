@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c44820706eba2954389ad6303a233313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Act 1
+  loadNextScene: 0
   drugTransition: {fileID: 0}
   tripCam: {fileID: 0}
 --- !u!135 &4589914301570672687
@@ -181,7 +181,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 3cf600412f974604e9d4f4b498452d65, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
