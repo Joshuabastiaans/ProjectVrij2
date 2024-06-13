@@ -83,7 +83,7 @@ Material:
     - _Frequency: 0.11
     - _NormalBlend: 0
     - _NormalStrenght: 4.62
-    - _Normal_Flip_Speed: 0.5
+    - _Normal_Flip_Speed: 0
     - _Normal_Strenght: 11.3
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -93,5 +93,6 @@ Material:
     - _Transparency: 1
     m_Colors:
     - _Ripple_Origin: {r: 0, g: 0, b: 0, a: 0}
+    - _Shiny: {r: 0, g: 0, b: 0, a: 0}
     - _Specular: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{dbf7e0b8-9ae1-42d1-832a-8529d9b5a58e}">
+		<property name="name">
+			<value>AmenMusicVolume</value>
+		</property>
+		<relationship name="folder">
+			<destination>{9c21831e-02aa-47f5-b75e-89ae9b7f3461}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{07c694f0-75df-4917-b370-e8031ad08e64}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{07c694f0-75df-4917-b370-e8031ad08e64}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.39999997615814209</value>
+		</property>
+	</object>
+</objects>

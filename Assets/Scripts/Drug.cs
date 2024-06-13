@@ -17,6 +17,7 @@ public class Drug : MonoBehaviour
     public bool darkWave;
     Animator animator;
     PlayerAudio playerAudio;
+    SwitchObjectLocations switchObjectLocations;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class Drug : MonoBehaviour
         suckSoundInstance = AudioManager.instance.CreateEventInstance(FMODEvents.instance.suckSound);
         suckSoundInstance.set3DAttributes(attributes);
         playerAudio = FindObjectOfType<PlayerAudio>();
+        switchObjectLocations = GetComponent<SwitchObjectLocations>();
     }
 
     // Update is called once per frame
@@ -40,6 +42,11 @@ public class Drug : MonoBehaviour
         suckSoundInstance.start();
         ambienceMusicChange.ParameterChange();
         taken = true;
+
+        if (switchObjectLocations != null)
+        {
+            switchObjectLocations.MoveObject();
+        }
         if (darkWave)
         {
             playerAudio.PlayDarkWave();

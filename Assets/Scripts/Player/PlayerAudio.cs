@@ -15,6 +15,8 @@ public class PlayerAudio : MonoBehaviour
     private EventInstance caveAmbience;
     private EventInstance playerBreathing;
     private EventInstance darkWave;
+    private EventInstance amenMusic;
+    private EventInstance releaseMusic;
     private FMOD.ATTRIBUTES_3D footstepAttributes;
     private FMOD.ATTRIBUTES_3D attributes;
     private Transform footstepsReferenceLocation;
@@ -57,6 +59,15 @@ public class PlayerAudio : MonoBehaviour
         darkWave = AudioManager.instance.CreateEventInstance(FMODEvents.instance.darkWave);
         darkWave.set3DAttributes(attributes);
 
+        // initialize amen music
+        amenMusic = AudioManager.instance.CreateEventInstance(FMODEvents.instance.amenMusic);
+        amenMusic.set3DAttributes(attributes);
+        amenMusic.start();
+
+        // initialize release music
+        releaseMusic = AudioManager.instance.CreateEventInstance(FMODEvents.instance.releaseMusic);
+        releaseMusic.set3DAttributes(attributes);
+        releaseMusic.start();
     }
 
     // Update is called once per frame
@@ -83,6 +94,9 @@ public class PlayerAudio : MonoBehaviour
                 caveAmbience.set3DAttributes(attributes);
                 playerBreathing.set3DAttributes(attributes);
                 music.set3DAttributes(attributes);
+                darkWave.set3DAttributes(attributes);
+                amenMusic.set3DAttributes(attributes);
+                releaseMusic.set3DAttributes(attributes);
             }
             previousPosition = currentPosition;
 
@@ -107,7 +121,16 @@ public class PlayerAudio : MonoBehaviour
     public void SetAmbienceParameter(string parameterName, float parameterValue)
     {
         music.setParameterByName(parameterName, parameterValue);
-        print("Ambience parameter changed to " + parameterValue);
+    }
+
+    public void SetAmenMusicParameter(string parameterName, float parameterValue)
+    {
+        amenMusic.setParameterByName(parameterName, parameterValue);
+    }
+
+    public void SetReleaseMusicParameter(string parameterName, float parameterValue)
+    {
+        releaseMusic.setParameterByName(parameterName, parameterValue);
     }
 
     private void OnDestroy()

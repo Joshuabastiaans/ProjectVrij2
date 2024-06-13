@@ -51,8 +51,10 @@ MonoBehaviour:
   currentRoomID: 0
   createExit: 0
   firstRoom: {fileID: 7558251618766413836}
+  kaoloDelete: {fileID: 0}
   isLeftDoor: 0
   isRightDoor: 0
+  kauloWereld: {fileID: 0}
 --- !u!1 &3057378357181312263
 GameObject:
   m_ObjectHideFlags: 0

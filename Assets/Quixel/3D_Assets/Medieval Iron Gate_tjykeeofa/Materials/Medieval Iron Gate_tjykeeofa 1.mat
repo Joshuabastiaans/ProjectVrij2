@@ -115,7 +115,7 @@ Material:
     - _GlossyReflections: 1
     - _Metallic: 1
     - _Mode: 0
-    - _Normal_Flip_Speed: 0.5
+    - _Normal_Flip_Speed: 0
     - _Normal_Strength: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02

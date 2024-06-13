@@ -114,6 +114,20 @@ MonoBehaviour:
       Data3: 1032256693
       Data4: 2114644747
     Path: event:/Music/SpookyMusic
+  <amenMusic>k__BackingField:
+    Guid:
+      Data1: 1414561096
+      Data2: 1092972060
+      Data3: 600793518
+      Data4: -100717574
+    Path: event:/Music/BigGod
+  <releaseMusic>k__BackingField:
+    Guid:
+      Data1: 272339189
+      Data2: 1213999624
+      Data3: 13897126
+      Data4: -63332491
+    Path: event:/Music/ReleaseMusic
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: -62166733

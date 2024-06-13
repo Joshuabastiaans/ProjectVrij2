@@ -10,10 +10,18 @@ public class RoomManager : MonoBehaviour
     public int currentRoomID = 0;
     [HideInInspector] public bool createExit = false;
     public GameObject firstRoom;
+    public GameObject kaoloDelete;
     [HideInInspector] public bool isLeftDoor = false;
     [HideInInspector] public bool isRightDoor = false;
+    PlayerAudio playerAudio;
+    public GameObject kauloWereld;
 
     private GameObject currentRoom;
+
+    void Start()
+    {
+        playerAudio = FindObjectOfType<PlayerAudio>();
+    }
     public void GenerateRoom(Vector3 relativePosition)
     {
 
@@ -31,18 +39,10 @@ public class RoomManager : MonoBehaviour
     public void DisableRooms()
     {
         print("Disabling rooms" + currentRoomID);
-
+        kaoloDelete.SetActive(false);
         if (currentRoomID != 0)
         {
             firstRoom.SetActive(false);
-            if (isLeftDoor)
-            {
-                firstRoom.GetComponent<Animation>().Play("RightDoorFuck");
-            }
-            else if (isRightDoor)
-            {
-                firstRoom.GetComponent<Animation>().Play("LeftDoorFuck");
-            }
         }
         foreach (var roomID in roomDictionary.Keys)
         {
@@ -52,6 +52,19 @@ public class RoomManager : MonoBehaviour
             }
         }
         currentRoom = roomDictionary[currentRoomID];
+        if (currentRoomID == 0)
+        {
+            if (isLeftDoor)
+            {
+                print("Left door");
+                firstRoom.GetComponent<Animation>().Play("RightDoorFuck");
+            }
+            else if (isRightDoor)
+            {
+                print("Right door");
+                firstRoom.GetComponent<Animation>().Play("LeftDoorFuck");
+            }
+        }
         if (isLeftDoor)
         {
             currentRoom.GetComponent<Animation>().Play("RightDoorFuck");
@@ -60,8 +73,10 @@ public class RoomManager : MonoBehaviour
         {
             currentRoom.GetComponent<Animation>().Play("LeftDoorFuck");
         }
-
-
+        Vector3 roomPosition = roomDictionary[roomIDCounter].transform.position;
+        kauloWereld.transform.position = roomPosition + new Vector3(22.79f, 2.07f, -326.91f);
+        playerAudio.SetAmenMusicParameter("AmenMusicVolume", 1f);
+        playerAudio.SetAmbienceParameter("SpookyMusicVolume", 0f);
     }
 
     public void DestroyRoom(int roomID)
