@@ -38,9 +38,16 @@ public class Drug : MonoBehaviour
 
     public void TakeDrug()
     {
+        if (loadNextScene)
+        {
+            Invoke("LoadNextScene", 8);
+            animator.SetTrigger("dissapear");
+            drugTransition.SetTrigger("leave");
+        }
+
         if (taken) return;
         suckSoundInstance.start();
-        if(ambienceMusicChange != null)
+        if (ambienceMusicChange != null)
             ambienceMusicChange.ParameterChange();
         taken = true;
 
@@ -53,18 +60,11 @@ public class Drug : MonoBehaviour
             playerAudio.PlayDarkWave();
         }
 
-        if (loadNextScene)
-        {
-            Invoke("LoadNextScene", 8);
-            animator.SetTrigger("dissapear");
-            drugTransition.SetTrigger("leave");
-        }
-        else
-        {
-            animator.SetTrigger("dissapear");
-            drugTransition.SetTrigger("stay");
-            tripCam.SetTrigger("trip");
-        }
+        animator.SetTrigger("dissapear");
+        drugTransition.SetTrigger("stay");
+        tripCam.SetTrigger("trip");
+
+
     }
 
     void LoadNextScene()
