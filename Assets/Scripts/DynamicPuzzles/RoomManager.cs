@@ -75,8 +75,6 @@ public class RoomManager : MonoBehaviour
         }
         Vector3 roomPosition = roomDictionary[roomIDCounter].transform.position;
         kauloWereld.transform.position = roomPosition + new Vector3(22.79f, 2.07f, -326.91f);
-        playerAudio.SetAmenMusicParameter("AmenMusicVolume", 1f);
-        playerAudio.SetAmbienceParameter("SpookyMusicVolume", 0f);
     }
 
     public void DestroyRoom(int roomID)

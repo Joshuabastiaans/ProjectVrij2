@@ -7,23 +7,33 @@ public class IntroSequence : MonoBehaviour
 {
     Animator animator;
 
+    PlayerControls playerControls;
+
+    void Awake()
+    {
+        playerControls = new PlayerControls();
+        playerControls.Player.Interact.performed += ctx => StartGame();
+    }
+
+    void OnEnable()
+    {
+        playerControls.Enable();
+    }
+
+    void OnDisable()
+    {
+        playerControls.Disable();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StartGame();
-        }
-    }
-
     public void StartGame()
     {
+        print("StartGame");
         animator.SetTrigger("next");
     }
 

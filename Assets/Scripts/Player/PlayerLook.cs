@@ -1,19 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerLook : MonoBehaviour
 {
-    [SerializeField] float mouseSensitivity = 300;
+    [SerializeField] float mouseSensitivity = 200;
     [SerializeField] float spinSpeed = 10;
 
     [SerializeField] Transform playerBody;
 
-    public float mouseX;
-    public float mouseY;
+    private PlayerControls controls;
+    private Vector2 lookInput;
     public float zRotation;
 
     [SerializeField] bool alwaysRotating;
+
+    void Awake()
+    {
+        controls = new PlayerControls();
+        controls.Player.Look.performed += ctx => lookInput = ctx.ReadValue<Vector2>();
+        controls.Player.Look.canceled += ctx => lookInput = Vector2.zero;
+        controls.Enable();
+    }
+
+    void OnEnable()
+    {
+        controls.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Disable();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -24,8 +43,8 @@ public class PlayerLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        float mouseX = lookInput.x * mouseSensitivity * Time.deltaTime;
+        float mouseY = lookInput.y * mouseSensitivity * Time.deltaTime;
 
         if (Input.GetKey(KeyCode.Q))
         {
@@ -40,11 +59,7 @@ public class PlayerLook : MonoBehaviour
             zRotation = 0;
         }
 
-        
-    }
-
-    void LateUpdate()
-    {
+        // Apply rotation
         transform.Rotate(-mouseY, mouseX, zRotation);
     }
 }

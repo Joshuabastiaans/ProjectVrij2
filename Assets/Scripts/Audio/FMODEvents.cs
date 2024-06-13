@@ -14,6 +14,7 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference spookyMusic { get; private set; }
     [field: SerializeField] public EventReference amenMusic { get; private set; }
     [field: SerializeField] public EventReference releaseMusic { get; private set; }
+    [field: SerializeField] public EventReference breeze { get; private set; }
 
 
     [field: Header("Player SFX")]

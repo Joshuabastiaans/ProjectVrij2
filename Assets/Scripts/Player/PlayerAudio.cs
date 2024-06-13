@@ -20,7 +20,7 @@ public class PlayerAudio : MonoBehaviour
     private FMOD.ATTRIBUTES_3D footstepAttributes;
     private FMOD.ATTRIBUTES_3D attributes;
     private Transform footstepsReferenceLocation;
-
+    private PlayerGroundMovement playerGroundMovement;
 
     private EventInstance music;
 
@@ -28,6 +28,7 @@ public class PlayerAudio : MonoBehaviour
     void Start()
     {
         InitializeAudio();
+        playerGroundMovement = GetComponent<PlayerGroundMovement>();
     }
 
     void InitializeAudio()
@@ -78,44 +79,42 @@ public class PlayerAudio : MonoBehaviour
 
     public void UpdateSound()
     {
-        if (isGrounded)
+        // if moving play footsteps
+        Vector3 currentPosition = transform.position;
+        if (previousPosition != null)
         {
-            // if moving play footsteps
-            Vector3 currentPosition = transform.position;
-            if (previousPosition != null)
-            {
-                float distanceTravelled = Vector3.Distance(previousPosition, currentPosition);
-                float timeTaken = Time.deltaTime;
-                velocity = distanceTravelled / timeTaken;
+            float distanceTravelled = Vector3.Distance(previousPosition, currentPosition);
+            float timeTaken = Time.deltaTime;
+            velocity = distanceTravelled / timeTaken;
 
-                footstepAttributes = FMODUnity.RuntimeUtils.To3DAttributes(footstepsReferenceLocation);
-                playerFootsteps.set3DAttributes(footstepAttributes);
-                attributes = FMODUnity.RuntimeUtils.To3DAttributes(transform);
-                caveAmbience.set3DAttributes(attributes);
-                playerBreathing.set3DAttributes(attributes);
-                music.set3DAttributes(attributes);
-                darkWave.set3DAttributes(attributes);
-                amenMusic.set3DAttributes(attributes);
-                releaseMusic.set3DAttributes(attributes);
-            }
-            previousPosition = currentPosition;
+            footstepAttributes = FMODUnity.RuntimeUtils.To3DAttributes(footstepsReferenceLocation);
+            playerFootsteps.set3DAttributes(footstepAttributes);
+            attributes = FMODUnity.RuntimeUtils.To3DAttributes(transform);
+            caveAmbience.set3DAttributes(attributes);
+            playerBreathing.set3DAttributes(attributes);
+            music.set3DAttributes(attributes);
+            darkWave.set3DAttributes(attributes);
+            amenMusic.set3DAttributes(attributes);
+            releaseMusic.set3DAttributes(attributes);
+        }
+        previousPosition = currentPosition;
 
-            if (velocity > velocitySoundThreshold)
-            {
-                PLAYBACK_STATE playbackState;
-                playerFootsteps.getPlaybackState(out playbackState);
+        if (velocity > velocitySoundThreshold && playerGroundMovement.IsGrounded())
+        {
+            PLAYBACK_STATE playbackState;
+            playerFootsteps.getPlaybackState(out playbackState);
 
-                if (playbackState != PLAYBACK_STATE.PLAYING)
-                {
-                    print("playing footsteps");
-                    playerFootsteps.start();
-                }
-            }
-            else
+            if (playbackState != PLAYBACK_STATE.PLAYING)
             {
-                playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+                print("playing footsteps");
+                playerFootsteps.start();
             }
         }
+        else
+        {
+            playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+        }
+
     }
 
     public void SetAmbienceParameter(string parameterName, float parameterValue)

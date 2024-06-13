@@ -128,6 +128,13 @@ MonoBehaviour:
       Data3: 13897126
       Data4: -63332491
     Path: event:/Music/ReleaseMusic
+  <breeze>k__BackingField:
+    Guid:
+      Data1: 2027410226
+      Data2: 1190912074
+      Data3: -331701581
+      Data4: 1332836795
+    Path: event:/Music/Gentle Breeze
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: -62166733

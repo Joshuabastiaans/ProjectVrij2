@@ -40,7 +40,8 @@ public class Drug : MonoBehaviour
     {
         if (taken) return;
         suckSoundInstance.start();
-        ambienceMusicChange.ParameterChange();
+        if(ambienceMusicChange != null)
+            ambienceMusicChange.ParameterChange();
         taken = true;
 
         if (switchObjectLocations != null)
