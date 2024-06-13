@@ -80,7 +80,7 @@ Material:
     - _Contrast: 1.5
     - _Edge_Blend: 0.5
     - _Effect_Radius: 18
-    - _Frequency: 1
+    - _Frequency: 0.1
     - _NormalBlend: 0
     - _NormalStrenght: 4
     - _Normal_Flip_Speed: 0
@@ -93,5 +93,6 @@ Material:
     - _Transparency: 1
     m_Colors:
     - _Ripple_Origin: {r: 0, g: 0, b: 0, a: 0}
+    - _Shiny: {r: 0, g: 0, b: 0, a: 0}
     - _Specular: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
